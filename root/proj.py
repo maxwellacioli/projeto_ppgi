@@ -40,9 +40,9 @@ for column in df_treated_column_names:
 
 ###### SELECTED FEATURES #########
 
-df_treated_selected = pd.read_csv("selected_features_data.csv", low_memory=False)
+df_treated_selected = pd.read_csv("new_selected_features_data.csv", low_memory=False)
 
-target1 = df_treated_selected.pop('type_of_breast_surgery')
+target1 = df_treated_selected.pop('overall_survival')
 
 df_treated_selected_column_names = list(df_treated_selected)
 
@@ -88,7 +88,7 @@ columns_metadata_names = ["time_acc_lr_original_feats",
 metadata_df = pd.DataFrame(columns = columns_metadata_names)
 
 index = 0
-while index < 100:
+while index < 1:
     ## Accuracy ##
     
     # lr #
