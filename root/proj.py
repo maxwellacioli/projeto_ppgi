@@ -58,412 +58,412 @@ for column in df_treated_selected_column_names:
 
 ###################################
 
-columns_metadata_names = ["time_acc_dt_original_feats",
-                "time_acc_dt_selected_feats",
-                "time_acc_neight_original_feats",
-                "time_acc_neight_selected_feats",
-                "time_acc_gnb_original_feats",
-                "time_acc_gnb_selected_feats",
-                "time_acc_rf_original_feats",
-                "time_acc_rf_selected_feats",
-                "time_acc_mlp_original_feats",
-                "time_acc_mlp_selected_feats",
-                "time_acc_svc_original_feats",
-                "time_acc_svc_selected_feats"
-                "time_prec_dt_original_feats",
-                "time_prec_dt_selected_feats",
-                "time_prec_neight_original_feats",
-                "time_prec_neight_selected_feats",
-                "time_prec_gnb_original_feats",
-                "time_prec_gnb_selected_feats",
-                "time_prec_rf_original_feats",
-                "time_prec_rf_selected_feats",
-                "time_prec_mlp_original_feats",
-                "time_prec_mlp_selected_feats",
-                "time_prec_svc_original_feats",
-                "time_prec_svc_selected_feats"
-                "time_rec_dt_original_feats",
-                "time_rec_dt_selected_feats",
-                "time_rec_neight_original_feats",
-                "time_rec_neight_selected_feats",
-                "time_rec_gnb_original_feats",
-                "time_rec_gnb_selected_feats",
-                "time_rec_rf_original_feats",
-                "time_rec_rf_selected_feats",
-                "time_rec_mlp_original_feats",
-                "time_rec_mlp_selected_feats",
-                "time_rec_svc_original_feats",
-                "time_rec_svc_selected_feats"
-                "time_f1_dt_original_feats",
-                "time_f1_dt_selected_feats",
-                "time_f1_neight_original_feats",
-                "time_f1_neight_selected_feats",
-                "time_f1_gnb_original_feats",
-                "time_f1_gnb_selected_feats",
-                "time_f1_rf_original_feats",
-                "time_f1_rf_selected_feats",
-                "time_f1_mlp_original_feats",
-                "time_f1_mlp_selected_feats",
-                "time_f1_svc_original_feats",
-                "time_f1_svc_selected_feats"
-                ]
+# columns_metadata_names = ["time_acc_dt_original_feats",
+#                 "time_acc_dt_selected_feats",
+#                 "time_acc_neight_original_feats",
+#                 "time_acc_neight_selected_feats",
+#                 "time_acc_gnb_original_feats",
+#                 "time_acc_gnb_selected_feats",
+#                 "time_acc_rf_original_feats",
+#                 "time_acc_rf_selected_feats",
+#                 "time_acc_mlp_original_feats",
+#                 "time_acc_mlp_selected_feats",
+#                 "time_acc_svc_original_feats",
+#                 "time_acc_svc_selected_feats"
+#                 "time_prec_dt_original_feats",
+#                 "time_prec_dt_selected_feats",
+#                 "time_prec_neight_original_feats",
+#                 "time_prec_neight_selected_feats",
+#                 "time_prec_gnb_original_feats",
+#                 "time_prec_gnb_selected_feats",
+#                 "time_prec_rf_original_feats",
+#                 "time_prec_rf_selected_feats",
+#                 "time_prec_mlp_original_feats",
+#                 "time_prec_mlp_selected_feats",
+#                 "time_prec_svc_original_feats",
+#                 "time_prec_svc_selected_feats"
+#                 "time_rec_dt_original_feats",
+#                 "time_rec_dt_selected_feats",
+#                 "time_rec_neight_original_feats",
+#                 "time_rec_neight_selected_feats",
+#                 "time_rec_gnb_original_feats",
+#                 "time_rec_gnb_selected_feats",
+#                 "time_rec_rf_original_feats",
+#                 "time_rec_rf_selected_feats",
+#                 "time_rec_mlp_original_feats",
+#                 "time_rec_mlp_selected_feats",
+#                 "time_rec_svc_original_feats",
+#                 "time_rec_svc_selected_feats"
+#                 "time_f1_dt_original_feats",
+#                 "time_f1_dt_selected_feats",
+#                 "time_f1_neight_original_feats",
+#                 "time_f1_neight_selected_feats",
+#                 "time_f1_gnb_original_feats",
+#                 "time_f1_gnb_selected_feats",
+#                 "time_f1_rf_original_feats",
+#                 "time_f1_rf_selected_feats",
+#                 "time_f1_mlp_original_feats",
+#                 "time_f1_mlp_selected_feats",
+#                 "time_f1_svc_original_feats",
+#                 "time_f1_svc_selected_feats"
+#                 ]
 
-metadata_df = pd.DataFrame(columns = columns_metadata_names)
+# metadata_df = pd.DataFrame(columns = columns_metadata_names)
 
-index = 1
-while index <=100:
-    print('current index: ', index)
-    ## Accuracy ##
+# index = 1
+# while index <=100:
+#     print('current index: ', index)
+#     ## Accuracy ##
     
-     # svc #
+#      # svc #
     
-    clf = svc
+#     clf = svc
     
-    t = time()
-    acc_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_svc_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_svc_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_svc_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_svc_selected_feats = round(time()-t,3)
     
-     # mlp #
+#      # mlp #
     
-    clf = mlp
+#     clf = mlp
     
-    t = time()
-    acc_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_mlp_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_mlp_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_mlp_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_mlp_selected_feats = round(time()-t,3)
     
-    # dt #
+#     # dt #
     
-    clf = dt
+#     clf = dt
     
-    t = time()
-    acc_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_dt_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_dt_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_dt_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_dt_selected_feats = round(time()-t,3)
     
-    # knn#
+#     # knn#
     
-    clf = neigh
+#     clf = neigh
 
-    t = time()
-    acc_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_neight_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_neight_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_neight_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_neight_selected_feats = round(time()-t,3)
     
-    # gnb #
+#     # gnb #
     
-    clf = gnb
+#     clf = gnb
     
-    t = time()
-    acc_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_gnb_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_gnb_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_gnb_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_gnb_selected_feats = round(time()-t,3)
     
-      # rf #
+#       # rf #
     
-    clf = rf
+#     clf = rf
     
-    t = time()
-    acc_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
-    time_acc_rf_original_feats = round(time()-t,3)
+#     t = time()
+#     acc_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='accuracy'))
+#     time_acc_rf_original_feats = round(time()-t,3)
 
-    t = time()
-    acc_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
-    time_acc_rf_selected_feats = round(time()-t,3)
+#     t = time()
+#     acc_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='accuracy'))
+#     time_acc_rf_selected_feats = round(time()-t,3)
     
-    ## Precision ##
+#     ## Precision ##
     
-    # svc #
+#     # svc #
     
-    clf = svc
+#     clf = svc
     
-    t = time()
-    prec_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_svc_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_svc_original_feats = round(time()-t,3)
 
-    t = time()
-    prec_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_svc_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_svc_selected_feats = round(time()-t,3)
     
-     # mlp #
+#      # mlp #
     
-    clf = mlp
+#     clf = mlp
     
-    t = time()
-    prec_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_mlp_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_mlp_original_feats = round(time()-t,3)
 
-    t = time()
-    prec_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_mlp_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_mlp_selected_feats = round(time()-t,3)
     
     
-    # dt #
+#     # dt #
 
-    clf = dt
+#     clf = dt
     
-    t = time()
-    prec_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_dt_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_dt_original_feats = round(time()-t,3)
     
-    t = time()
-    prec_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_dt_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_dt_selected_feats = round(time()-t,3)
     
-    # knn#
+#     # knn#
     
-    clf = neigh
+#     clf = neigh
     
-    t = time()
-    prec_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_neight_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_neight_original_feats = round(time()-t,3)
     
-    t = time()
-    prec_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_neight_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_neight_selected_feats = round(time()-t,3)
     
-    # gnb #
+#     # gnb #
     
-    clf = gnb
+#     clf = gnb
     
-    t = time()
-    prec_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_gnb_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_gnb_original_feats = round(time()-t,3)
     
-    t = time()
-    prec_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_gnb_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_gnb_selected_feats = round(time()-t,3)
     
-      # rf #
+#       # rf #
     
-    clf = rf
+#     clf = rf
     
-    t = time()
-    prec_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
-    time_prec_rf_original_feats = round(time()-t,3)
+#     t = time()
+#     prec_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='precision'))
+#     time_prec_rf_original_feats = round(time()-t,3)
     
-    t = time()
-    prec_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
-    time_prec_rf_selected_feats = round(time()-t,3)
+#     t = time()
+#     prec_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='precision'))
+#     time_prec_rf_selected_feats = round(time()-t,3)
     
-    ## Recall ##
+#     ## Recall ##
     
-    # svc #
+#     # svc #
     
-    clf = svc
+#     clf = svc
     
-    t = time()
-    rec_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_svc_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_svc_original_feats = round(time()-t,3)
 
-    t = time()
-    rec_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_svc_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_svc_selected_feats = round(time()-t,3)
     
-     # mlp #
+#      # mlp #
     
-    clf = mlp
+#     clf = mlp
     
-    t = time()
-    rec_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_mlp_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_mlp_original_feats = round(time()-t,3)
 
-    t = time()
-    rec_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_mlp_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_mlp_selected_feats = round(time()-t,3)
     
     
-    # dt #
+#     # dt #
 
-    clf = dt
+#     clf = dt
     
-    t = time()
-    rec_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_dt_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_dt_original_feats = round(time()-t,3)
     
-    t = time()
-    rec_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_dt_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_dt_selected_feats = round(time()-t,3)
     
-    # knn#
+#     # knn#
     
-    clf = neigh
+#     clf = neigh
     
-    t = time()
-    rec_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_neight_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_neight_original_feats = round(time()-t,3)
     
-    t = time()
-    rec_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_neight_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_neight_selected_feats = round(time()-t,3)
     
-    # gnb #
+#     # gnb #
     
-    clf = gnb
+#     clf = gnb
     
-    t = time()
-    rec_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_gnb_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_gnb_original_feats = round(time()-t,3)
     
-    t = time()
-    rec_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_gnb_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_gnb_selected_feats = round(time()-t,3)
     
-      # rf #
+#       # rf #
     
-    clf = rf
+#     clf = rf
     
-    t = time()
-    rec_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
-    time_rec_rf_original_feats = round(time()-t,3)
+#     t = time()
+#     rec_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='recall'))
+#     time_rec_rf_original_feats = round(time()-t,3)
     
-    t = time()
-    rec_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
-    time_rec_rf_selected_feats = round(time()-t,3)
+#     t = time()
+#     rec_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='recall'))
+#     time_rec_rf_selected_feats = round(time()-t,3)
     
-    ## F1 ##
+#     ## F1 ##
     
-    # svc #
+#     # svc #
     
-    clf = svc
+#     clf = svc
     
-    t = time()
-    f1_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_svc_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_svc_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_svc_original_feats = round(time()-t,3)
 
-    t = time()
-    f1_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_svc_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_svc_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_svc_selected_feats = round(time()-t,3)
     
-     # mlp #
+#      # mlp #
     
-    clf = mlp
+#     clf = mlp
     
-    t = time()
-    f1_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_mlp_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_mlp_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_mlp_original_feats = round(time()-t,3)
 
-    t = time()
-    f1_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_mlp_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_mlp_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_mlp_selected_feats = round(time()-t,3)
     
     
-    # dt #
+#     # dt #
 
-    clf = dt
+#     clf = dt
     
-    t = time()
-    f1_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_dt_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_dt_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_dt_original_feats = round(time()-t,3)
     
-    t = time()
-    f1_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_dt_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_dt_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_dt_selected_feats = round(time()-t,3)
     
-    # knn#
+#     # knn#
     
-    clf = neigh
+#     clf = neigh
     
-    t = time()
-    f1_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_neight_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_neight_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_neight_original_feats = round(time()-t,3)
     
-    t = time()
-    f1_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_neight_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_neight_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_neight_selected_feats = round(time()-t,3)
     
-    # gnb #
+#     # gnb #
     
-    clf = gnb
+#     clf = gnb
     
-    t = time()
-    f1_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_gnb_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_gnb_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_gnb_original_feats = round(time()-t,3)
     
-    t = time()
-    f1_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_gnb_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_gnb_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_gnb_selected_feats = round(time()-t,3)
     
-      # rf #
+#       # rf #
     
-    clf = rf
+#     clf = rf
     
-    t = time()
-    f1_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
-    time_f1_rf_original_feats = round(time()-t,3)
+#     t = time()
+#     f1_rf_original_feats = np.mean(cross_val_score(clf, df_treated, target0, cv=10, scoring='f1'))
+#     time_f1_rf_original_feats = round(time()-t,3)
     
-    t = time()
-    f1_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
-    time_f1_rf_selected_feats = round(time()-t,3)
+#     t = time()
+#     f1_rf_selected_feats = np.mean(cross_val_score(clf, df_treated_selected, target1, cv=10, scoring='f1'))
+#     time_f1_rf_selected_feats = round(time()-t,3)
     
-    new_data = {"time_acc_dt_original_feats": time_acc_dt_original_feats, 
-                "time_acc_dt_selected_feats": time_acc_dt_selected_feats,
-                "time_acc_neight_original_feats": time_acc_neight_original_feats,
-                "time_acc_neight_selected_feats": time_acc_neight_selected_feats,
-                "time_acc_gnb_original_feats": time_acc_gnb_original_feats,
-                "time_acc_gnb_selected_feats": time_acc_gnb_selected_feats,
-                "time_acc_rf_original_feats": time_acc_rf_original_feats,
-                "time_acc_rf_selected_feats": time_acc_rf_selected_feats,
-                "time_acc_mlp_original_feats": time_acc_mlp_original_feats,
-                "time_acc_mlp_selected_feats": time_acc_mlp_selected_feats,
-                "time_acc_svc_original_feats": time_acc_svc_original_feats,
-                "time_acc_svc_selected_feats": time_acc_svc_selected_feats,
-                "time_prec_dt_original_feats": time_prec_dt_original_feats,
-                "time_prec_dt_selected_feats": time_prec_dt_selected_feats,
-                "time_prec_neight_original_feats": time_prec_neight_original_feats,
-                "time_prec_neight_selected_feats": time_prec_neight_selected_feats,
-                "time_prec_gnb_original_feats": time_prec_gnb_original_feats,
-                "time_prec_gnb_selected_feats": time_prec_gnb_selected_feats,
-                "time_prec_rf_original_feats": time_prec_rf_original_feats,
-                "time_prec_rf_selected_feats": time_prec_rf_selected_feats,
-                "time_prec_mlp_original_feats": time_prec_mlp_original_feats,
-                "time_prec_mlp_selected_feats": time_prec_mlp_selected_feats,
-                "time_prec_svc_original_feats": time_prec_svc_original_feats,
-                "time_prec_svc_selected_feats": time_prec_svc_selected_feats,
-                "time_rec_dt_original_feats": time_rec_dt_original_feats,
-                "time_rec_dt_selected_feats": time_rec_dt_selected_feats,
-                "time_rec_neight_original_feats": time_rec_neight_original_feats,
-                "time_rec_neight_selected_feats": time_rec_neight_selected_feats,
-                "time_rec_gnb_original_feats": time_rec_gnb_original_feats,
-                "time_rec_gnb_selected_feats": time_rec_gnb_selected_feats,
-                "time_rec_rf_original_feats": time_rec_rf_original_feats,
-                "time_rec_rf_selected_feats": time_rec_rf_selected_feats,
-                "time_rec_mlp_original_feats": time_rec_mlp_original_feats,
-                "time_rec_mlp_selected_feats": time_rec_mlp_selected_feats,
-                "time_rec_svc_original_feats": time_rec_svc_original_feats,
-                "time_rec_svc_selected_feats": time_rec_svc_selected_feats,
-                "time_f1_dt_original_feats": time_f1_dt_original_feats,
-                "time_f1_dt_selected_feats": time_f1_dt_selected_feats,
-                "time_f1_neight_original_feats": time_f1_neight_original_feats,
-                "time_f1_neight_selected_feats": time_f1_neight_selected_feats,
-                "time_f1_gnb_original_feats": time_f1_gnb_original_feats,
-                "time_f1_gnb_selected_feats": time_f1_gnb_selected_feats,
-                "time_f1_rf_original_feats": time_f1_rf_original_feats,
-                "time_f1_rf_selected_feats": time_f1_rf_selected_feats,
-                "time_f1_mlp_original_feats": time_f1_mlp_original_feats,
-                "time_f1_mlp_selected_feats": time_f1_mlp_selected_feats,
-                "time_f1_svc_original_feats": time_f1_svc_original_feats,
-                "time_f1_svc_selected_feats": time_f1_svc_selected_feats,
-                }
+#     new_data = {"time_acc_dt_original_feats": time_acc_dt_original_feats, 
+#                 "time_acc_dt_selected_feats": time_acc_dt_selected_feats,
+#                 "time_acc_neight_original_feats": time_acc_neight_original_feats,
+#                 "time_acc_neight_selected_feats": time_acc_neight_selected_feats,
+#                 "time_acc_gnb_original_feats": time_acc_gnb_original_feats,
+#                 "time_acc_gnb_selected_feats": time_acc_gnb_selected_feats,
+#                 "time_acc_rf_original_feats": time_acc_rf_original_feats,
+#                 "time_acc_rf_selected_feats": time_acc_rf_selected_feats,
+#                 "time_acc_mlp_original_feats": time_acc_mlp_original_feats,
+#                 "time_acc_mlp_selected_feats": time_acc_mlp_selected_feats,
+#                 "time_acc_svc_original_feats": time_acc_svc_original_feats,
+#                 "time_acc_svc_selected_feats": time_acc_svc_selected_feats,
+#                 "time_prec_dt_original_feats": time_prec_dt_original_feats,
+#                 "time_prec_dt_selected_feats": time_prec_dt_selected_feats,
+#                 "time_prec_neight_original_feats": time_prec_neight_original_feats,
+#                 "time_prec_neight_selected_feats": time_prec_neight_selected_feats,
+#                 "time_prec_gnb_original_feats": time_prec_gnb_original_feats,
+#                 "time_prec_gnb_selected_feats": time_prec_gnb_selected_feats,
+#                 "time_prec_rf_original_feats": time_prec_rf_original_feats,
+#                 "time_prec_rf_selected_feats": time_prec_rf_selected_feats,
+#                 "time_prec_mlp_original_feats": time_prec_mlp_original_feats,
+#                 "time_prec_mlp_selected_feats": time_prec_mlp_selected_feats,
+#                 "time_prec_svc_original_feats": time_prec_svc_original_feats,
+#                 "time_prec_svc_selected_feats": time_prec_svc_selected_feats,
+#                 "time_rec_dt_original_feats": time_rec_dt_original_feats,
+#                 "time_rec_dt_selected_feats": time_rec_dt_selected_feats,
+#                 "time_rec_neight_original_feats": time_rec_neight_original_feats,
+#                 "time_rec_neight_selected_feats": time_rec_neight_selected_feats,
+#                 "time_rec_gnb_original_feats": time_rec_gnb_original_feats,
+#                 "time_rec_gnb_selected_feats": time_rec_gnb_selected_feats,
+#                 "time_rec_rf_original_feats": time_rec_rf_original_feats,
+#                 "time_rec_rf_selected_feats": time_rec_rf_selected_feats,
+#                 "time_rec_mlp_original_feats": time_rec_mlp_original_feats,
+#                 "time_rec_mlp_selected_feats": time_rec_mlp_selected_feats,
+#                 "time_rec_svc_original_feats": time_rec_svc_original_feats,
+#                 "time_rec_svc_selected_feats": time_rec_svc_selected_feats,
+#                 "time_f1_dt_original_feats": time_f1_dt_original_feats,
+#                 "time_f1_dt_selected_feats": time_f1_dt_selected_feats,
+#                 "time_f1_neight_original_feats": time_f1_neight_original_feats,
+#                 "time_f1_neight_selected_feats": time_f1_neight_selected_feats,
+#                 "time_f1_gnb_original_feats": time_f1_gnb_original_feats,
+#                 "time_f1_gnb_selected_feats": time_f1_gnb_selected_feats,
+#                 "time_f1_rf_original_feats": time_f1_rf_original_feats,
+#                 "time_f1_rf_selected_feats": time_f1_rf_selected_feats,
+#                 "time_f1_mlp_original_feats": time_f1_mlp_original_feats,
+#                 "time_f1_mlp_selected_feats": time_f1_mlp_selected_feats,
+#                 "time_f1_svc_original_feats": time_f1_svc_original_feats,
+#                 "time_f1_svc_selected_feats": time_f1_svc_selected_feats,
+#                 }
     
-    metadata_df = metadata_df.append(new_data, ignore_index=True)
+#     metadata_df = metadata_df.append(new_data, ignore_index=True)
     
-    index+=1
+#     index+=1
 
-metadata_df.to_csv('metadata104.csv', sep=';', encoding='utf-8', index=False)
+# metadata_df.to_csv('metadata104.csv', sep=';', encoding='utf-8', index=False)
