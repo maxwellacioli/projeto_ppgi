@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Wang, Fan
+AU  - Dohogne, Zachariah
+AU  - Yang, Jin
+AU  - Liu, Yu
+AU  - Soibam, Benjamin
+PY  - 2018
+DA  - 2018/02/13
+TI  - Predictors of breast cancer cell types and their prognostic power in breast cancer patients
+JO  - BMC Genomics
+SP  - 137
+VL  - 19
+IS  - 1
+AB  - Comprehensive understanding of intratumor heterogeneity requires identification of molecular markers, which are capable of differentiating different subpopulations and which also have clinical significance. One important tool that has been addressing this issue is single cell RNA-Sequencing (scRNASeq) that allows the quantification of expression profiles of transcripts in individual cells in a population of cancer cells. Using the expression profiles from scRNASeq, current studies conduct analysis to group cells into different subpopulations using clustering algorithms. In this study, we explore scRNASeq cancer data from a different perspective. We focus on scRNASeq data originating from cancer cells pertaining to a particular cancer type, where the cell type or the subpopulation to which each cell belongs is known. We investigate if the “cell type” of a cancer cell can be predicted based on the expression profiles of a small set of transcripts.
+SN  - 1471-2164
+UR  - https://doi.org/10.1186/s12864-018-4527-y
+DO  - 10.1186/s12864-018-4527-y
+ID  - Wang2018
+ER  - 

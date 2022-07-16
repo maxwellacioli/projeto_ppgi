@@ -1,0 +1,85 @@
+PMID- 27688975
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DCOM- 20161005
+LR  - 20181113
+IS  - 2167-8359 (Print)
+IS  - 2167-8359 (Electronic)
+IS  - 2167-8359 (Linking)
+VI  - 4
+DP  - 2016
+TI  - A genetic programming approach to oral cancer prognosis.
+PG  - e2482
+LID - 10.7717/peerj.2482 [doi]
+LID - e2482
+AB  - BACKGROUND: The potential of genetic programming (GP) on various fields has been 
+      attained in recent years. In bio-medical field, many researches in GP are focused on 
+      the recognition of cancerous cells and also on gene expression profiling data. In 
+      this research, the aim is to study the performance of GP on the survival prediction 
+      of a small sample size of oral cancer prognosis dataset, which is the first study in 
+      the field of oral cancer prognosis. METHOD: GP is applied on an oral cancer dataset 
+      that contains 31 cases collected from the Malaysia Oral Cancer Database and Tissue 
+      Bank System (MOCDTBS). The feature subsets that is automatically selected through GP 
+      were noted and the influences of this subset on the results of GP were recorded. In 
+      addition, a comparison between the GP performance and that of the Support Vector 
+      Machine (SVM) and logistic regression (LR) are also done in order to verify the 
+      predictive capabilities of the GP. RESULT: The result shows that GP performed the 
+      best (average accuracy of 83.87% and average AUROC of 0.8341) when the features 
+      selected are smoking, drinking, chewing, histological differentiation of SCC, and 
+      oncogene p63. In addition, based on the comparison results, we found that the GP 
+      outperformed the SVM and LR in oral cancer prognosis. DISCUSSION: Some of the 
+      features in the dataset are found to be statistically co-related. This is because 
+      the accuracy of the GP prediction drops when one of the feature in the best feature 
+      subset is excluded. Thus, GP provides an automatic feature selection function, which 
+      chooses features that are highly correlated to the prognosis of oral cancer. This 
+      makes GP an ideal prediction model for cancer clinical and genomic data that can be 
+      used to aid physicians in their decision making stage of diagnosis or prognosis.
+FAU - Tan, Mei Sze
+AU  - Tan MS
+AD  - Bioinformatics Program, Institute of Biological Sciences, Faculty of Science, 
+      University of Malaya , Kuala Lumpur , Malaysia.
+FAU - Tan, Jing Wei
+AU  - Tan JW
+AD  - Bioinformatics Program, Institute of Biological Sciences, Faculty of Science, 
+      University of Malaya , Kuala Lumpur , Malaysia.
+FAU - Chang, Siow-Wee
+AU  - Chang SW
+AD  - Bioinformatics Program, Institute of Biological Sciences, Faculty of Science, 
+      University of Malaya , Kuala Lumpur , Malaysia.
+FAU - Yap, Hwa Jen
+AU  - Yap HJ
+AD  - Department of Mechanical Engineering, Faculty of Engineering, University of Malaya , 
+      Kuala Lumpur , Malaysia.
+FAU - Abdul Kareem, Sameem
+AU  - Abdul Kareem S
+AD  - Department of Artificial Intelligence, Faculty of Computer Science & Information 
+      Technology, University of Malaya , Kuala Lumpur , Malaysia.
+FAU - Zain, Rosnah Binti
+AU  - Zain RB
+AD  - Oral Cancer Research & Coordinating Centre (OCRCC), Faculty of Dentistry, University 
+      of Malaya , Kuala Lumpur , Malaysia.
+LA  - eng
+PT  - Journal Article
+DEP - 20160921
+TA  - PeerJ
+JT  - PeerJ
+JID - 101603425
+PMC - PMC5036111
+OTO - NOTNLM
+OT  - Feature selection
+OT  - Genetic Programming
+OT  - Machine learning
+OT  - Oral cancer prognosis
+COIS- The authors declare there are no competing interests.
+EDAT- 2016/10/01 06:00
+MHDA- 2016/10/01 06:01
+CRDT- 2016/10/01 06:00
+PHST- 2016/06/11 00:00 [received]
+PHST- 2016/08/24 00:00 [accepted]
+PHST- 2016/10/01 06:00 [entrez]
+PHST- 2016/10/01 06:00 [pubmed]
+PHST- 2016/10/01 06:01 [medline]
+AID - 2482 [pii]
+AID - 10.7717/peerj.2482 [doi]
+PST - epublish
+SO  - PeerJ. 2016 Sep 21;4:e2482. doi: 10.7717/peerj.2482. eCollection 2016.

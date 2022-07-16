@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Jaber, Mustafa I.
+AU  - Song, Bing
+AU  - Taylor, Clive
+AU  - Vaske, Charles J.
+AU  - Benz, Stephen C.
+AU  - Rabizadeh, Shahrooz
+AU  - Soon-Shiong, Patrick
+AU  - Szeto, Christopher W.
+PY  - 2020
+DA  - 2020/01/28
+TI  - A deep learning image-based intrinsic molecular subtype classifier of breast tumors reveals tumor heterogeneity that may affect survival
+JO  - Breast Cancer Research
+SP  - 12
+VL  - 22
+IS  - 1
+AB  - Breast cancer intrinsic molecular subtype (IMS) as classified by the expression-based PAM50 assay is considered a strong prognostic feature, even when controlled for by standard clinicopathological features such as age, grade, and nodal status, yet the molecular testing required to elucidate these subtypes is not routinely performed. Furthermore, when such bulk assays as RNA sequencing are performed, intratumoral heterogeneity that may affect prognosis and therapeutic decision-making can be missed.
+SN  - 1465-542X
+UR  - https://doi.org/10.1186/s13058-020-1248-3
+DO  - 10.1186/s13058-020-1248-3
+ID  - Jaber2020
+ER  - 

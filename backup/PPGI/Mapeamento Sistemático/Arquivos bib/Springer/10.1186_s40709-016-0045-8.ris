@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Yang, Junshan
+AU  - Zhou, Jiarui
+AU  - Zhu, Zexuan
+AU  - Ma, Xiaoliang
+AU  - Ji, Zhen
+PY  - 2016
+DA  - 2016/07/04
+TI  - Iterative ensemble feature selection for multiclass classification of imbalanced microarray data
+JO  - Journal of Biological Research-Thessaloniki
+SP  - 13
+VL  - 23
+IS  - 1
+AB  - Microarray technology allows biologists to monitor expression levels of thousands of genes among various tumor tissues. Identifying relevant genes for sample classification of various tumor types is beneficial to clinical studies. One of the most widely used classification strategies for multiclass classification data is the One-Versus-All (OVA) schema that divides the original problem into multiple binary classification of one class against the rest. Nevertheless, multiclass microarray data tend to suffer from imbalanced class distribution between majority and minority classes, which inevitably deteriorates the performance of the OVA classification.
+SN  - 2241-5793
+UR  - https://doi.org/10.1186/s40709-016-0045-8
+DO  - 10.1186/s40709-016-0045-8
+ID  - Yang2016
+ER  - 

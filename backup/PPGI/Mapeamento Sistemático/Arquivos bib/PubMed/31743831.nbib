@@ -1,0 +1,83 @@
+PMID- 31743831
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20191219
+LR  - 20191219
+IS  - 1476-928X (Electronic)
+IS  - 1476-9271 (Linking)
+VI  - 83
+DP  - 2019 Dec
+TI  - Taxonomy dimension reduction for colorectal cancer prediction.
+PG  - 107160
+LID - S1476-9271(19)30562-6 [pii]
+LID - 10.1016/j.compbiolchem.2019.107160 [doi]
+AB  - A growing number of people suffer from colorectal cancer, which is one of the most 
+      common cancers. It is essential to diagnose and treat the cancer as early as 
+      possible. The disease may change the microorganism communities in the gut, and it 
+      could be an efficient method to employ gut microorganisms to predict colorectal 
+      cancer. In this study, we selected operational taxonomic units that include several 
+      kinds of microorganisms to predict colorectal cancer. To find the most important 
+      microorganisms and obtain the best prediction performance, we explore effective 
+      feature selection methods. We employ three main steps. First, we use a single method 
+      to reduce features. Next, to reduce the number of features, we integrate the 
+      dimension reduction methods correlation-based feature selection and maximum 
+      relevance-maximum distance (MRMD 1.0 and MRMD 2.0). Then, we selected the important 
+      features according to the taxonomy files. In this study, we created training and 
+      test sets to obtain a more objective evaluation. Random forest, naïve Bayes, and 
+      decision tree classifiers were evaluated. The results show that the methods proposed 
+      in this study are better than hierarchical feature engineering. The proposed method, 
+      which combines correlation-based feature selection with MRMD 2.0, performed the best 
+      on the CRC2 dataset. The dataset and methods can be found in 
+      http://lab.malab.cn/data/microdata/data.html.
+CI  - Copyright © 2019 Elsevier Ltd. All rights reserved.
+FAU - Qu, Kaiyang
+AU  - Qu K
+AD  - College of Intelligence and Computing, Tianjin University, Tianjin, China.
+FAU - Gao, Feng
+AU  - Gao F
+AD  - Department of Oncology, Heilongjiang Province Land Reclamation Headquarters General 
+      Hospital, Harbin, China.
+FAU - Guo, Fei
+AU  - Guo F
+AD  - College of Intelligence and Computing, Tianjin University, Tianjin, China. 
+      Electronic address: fguo@tju.edu.cn.
+FAU - Zou, Quan
+AU  - Zou Q
+AD  - Institute of Fundamental and Frontier Sciences, University of Electronic Science and 
+      Technology of China, Chengdu, China; Center for Informational Biology, University of 
+      Electronic Science and Technology of China, Chengdu, China. Electronic address: 
+      zouquan@nclab.net.
+LA  - eng
+PT  - Journal Article
+DEP - 20191109
+PL  - England
+TA  - Comput Biol Chem
+JT  - Computational biology and chemistry
+JID - 101157394
+SB  - IM
+MH  - Bacteria/*classification/*isolation & purification
+MH  - Bayes Theorem
+MH  - Colorectal Neoplasms/*diagnosis/*microbiology
+MH  - Decision Trees
+MH  - *Gastrointestinal Microbiome
+MH  - Humans
+OTO - NOTNLM
+OT  - Colorectal cancer
+OT  - Correlation-based feature selection
+OT  - Machine learning
+OT  - Maximum relevant Maximum distance
+OT  - Microbial
+EDAT- 2019/11/20 06:00
+MHDA- 2019/12/20 06:00
+CRDT- 2019/11/20 06:00
+PHST- 2019/06/24 00:00 [received]
+PHST- 2019/11/02 00:00 [revised]
+PHST- 2019/11/04 00:00 [accepted]
+PHST- 2019/11/20 06:00 [pubmed]
+PHST- 2019/12/20 06:00 [medline]
+PHST- 2019/11/20 06:00 [entrez]
+AID - S1476-9271(19)30562-6 [pii]
+AID - 10.1016/j.compbiolchem.2019.107160 [doi]
+PST - ppublish
+SO  - Comput Biol Chem. 2019 Dec;83:107160. doi: 10.1016/j.compbiolchem.2019.107160. Epub 
+      2019 Nov 9.

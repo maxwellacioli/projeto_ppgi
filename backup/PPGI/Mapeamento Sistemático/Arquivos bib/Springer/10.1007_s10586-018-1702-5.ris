@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Sangaiah, Ilangovan
+AU  - Vincent Antony Kumar, A.
+PY  - 2019
+DA  - 2019/05/01
+TI  - Improving medical diagnosis performance using hybrid feature selection via relieff and entropy based genetic search (RF-EGA) approach: application to breast cancer prediction
+JO  - Cluster Computing
+SP  - 6899
+EP  - 6906
+VL  - 22
+IS  - 3
+AB  - In this research a new hybrid prediction algorithm for breast cancer has been made from a breast cancer data set. Many approaches are available in diagnosing the medical diseases like genetic algorithm, ant colony optimization, particle swarm optimization, cuckoo search algorithm, etc., The proposed algorithm uses a ReliefF attribute reduction with entropy based genetic algorithm for breast cancer detection. The hybrid combination of these techniques is used to handle the dataset with high dimension and uncertainties. The data are obtained from the Wisconsin breast cancer dataset; these data have been categorized based on different properties. The performance of the proposed method is evaluated and the results are compared with other well known feature selection methods. The obtained result shows that the proposed method has a remarkable ability to generate reduced-size subset of salient features while yielding significant classification accuracy for large datasets.
+SN  - 1573-7543
+UR  - https://doi.org/10.1007/s10586-018-1702-5
+DO  - 10.1007/s10586-018-1702-5
+ID  - Sangaiah2019
+ER  - 

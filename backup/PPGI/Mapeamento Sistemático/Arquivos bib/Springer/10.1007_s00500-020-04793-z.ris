@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Santhakumar, D.
+AU  - Logeswari, S.
+PY  - 2020
+DA  - 2020/09/01
+TI  - Efficient attribute selection technique for leukaemia prediction using microarray gene data
+JO  - Soft Computing
+SP  - 14265
+EP  - 14274
+VL  - 24
+IS  - 18
+AB  - The recent advancements in today’s medical sciences regarding Data Analytics have made it possible for the use of efficient techniques for analysis. For prognosis, diagnosis and cancer treatment, a microarray-based gene expression profiling is considered. Informative genes causing cancer are determined through the deoxyribonucleic acid microarray technique. Dimensionality is the utmost concern while working with multi-dimensional data analysis which acts as a barrier in extracting information from a dataset which leads to costly computational complexity. Thus, an imperative task in the selection of relevant features in the analysis of cancer microarray datasets is crucial towards effective classification. This work focuses on variable selection techniques by utilizing effective correlation for attribute selection along with ant colony optimization. The criterion of a given classifier is maximized through wrapper-based attribute selection, and so it needs efficient searching techniques in finding optimal feature combinations. A new wrapper-based selection technique which uses ant lion optimization (ALO) in finding optimal feature set is proposed in this work which maximizes classification performance. The natural shooting procedure of ant lions is imitated in the proposed ALO algorithm. Support vector machine technique was utilized for the classification of chosen marker genes.
+SN  - 1433-7479
+UR  - https://doi.org/10.1007/s00500-020-04793-z
+DO  - 10.1007/s00500-020-04793-z
+ID  - Santhakumar2020
+ER  - 

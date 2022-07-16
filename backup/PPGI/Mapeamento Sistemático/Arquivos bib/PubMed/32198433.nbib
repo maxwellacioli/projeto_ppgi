@@ -1,0 +1,87 @@
+PMID- 32198433
+OWN - NLM
+STAT- In-Process
+LR  - 20200826
+IS  - 2045-2322 (Electronic)
+IS  - 2045-2322 (Linking)
+VI  - 10
+IP  - 1
+DP  - 2020 Mar 20
+TI  - Machine Learning and Feature Selection Applied to SEER Data to Reliably Assess 
+      Thyroid Cancer Prognosis.
+PG  - 5176
+LID - 10.1038/s41598-020-62023-w [doi]
+LID - 5176
+AB  - Utilizing historical clinical datasets to guide future treatment choices is 
+      beneficial for patients and physicians. Machine learning and feature selection 
+      algorithms (namely, Fisher's discriminant ratio, Kruskal-Wallis' analysis, and 
+      Relief-F) have been combined in this research to analyse a SEER database containing 
+      clinical features from de-identified thyroid cancer patients. The data covered 34 
+      unique clinical variables such as patients' age at diagnosis or information 
+      regarding lymph nodes, which were employed to build various novel classifiers to 
+      distinguish patients that lived for over 10 years since diagnosis, from those who 
+      did not survive at least five years. By properly optimizing supervised neural 
+      networks, specifically multilayer perceptrons, using data from large groups of 
+      thyroid cancer patients (between 6,756 and 20,344 for different models), we 
+      demonstrate that unspecialized and existing medical recording can be reliably turned 
+      into power of prediction to help doctors make informed and optimized treatment 
+      decisions, as distinguishing patients in terms of prognosis has been achieved with 
+      94.5% accuracy. We also envisage the potential of applying our machine learning 
+      strategy to other diseases and purposes such as in designing clinical trials for 
+      unmasking the maximum benefits and minimizing risks associated with new drug 
+      candidates on given populations.
+FAU - Mourad, Moustafa
+AU  - Mourad M
+AD  - Division of Otolaryngology-Head & Neck Surgery, Jamaica Hospital Medical Center, New 
+      York, NY, USA.
+FAU - Moubayed, Sami
+AU  - Moubayed S
+AD  - Department of Otolaryngology-Head and Neck Surgery, University of Montreal, 
+      Montreal, Canada.
+FAU - Dezube, Aaron
+AU  - Dezube A
+AD  - Department of General Surgery, Tufts University, Boston, MA, USA.
+FAU - Mourad, Youssef
+AU  - Mourad Y
+AD  - Jagiellonian University, Krakow, Poland.
+FAU - Park, Kyle
+AU  - Park K
+AD  - Comprehensive Tissue Centre, Alberta Health Services, Alberta, Canada.
+FAU - Torreblanca-Zanca, Albertina
+AU  - Torreblanca-Zanca A
+AD  - Department of Neurosciences, Center for Research in Biological Systems, University 
+      of California, San Diego, School of Medicine, La Jolla, CA, USA.
+AD  - Departamento de Ingeniería Química, Facultad de Ciencias Químicas, Universidad 
+      Complutense de Madrid, Madrid, Spain.
+FAU - Torrecilla, José S
+AU  - Torrecilla JS
+AD  - Departamento de Ingeniería Química, Facultad de Ciencias Químicas, Universidad 
+      Complutense de Madrid, Madrid, Spain.
+FAU - Cancilla, John C
+AU  - Cancilla JC
+AD  - Scintillon Institute, San Diego, CA, USA. jcancilla@scintillon.org.
+FAU - Wang, Jiwu
+AU  - Wang J
+AD  - Scintillon Institute, San Diego, CA, USA. jiwuwang@scintillon.org.
+LA  - eng
+PT  - Journal Article
+DEP - 20200320
+TA  - Sci Rep
+JT  - Scientific reports
+JID - 101563288
+SB  - IM
+PMC - PMC7083829
+COIS- The authors declare no competing interests.
+EDAT- 2020/03/22 06:00
+MHDA- 2020/03/22 06:00
+CRDT- 2020/03/22 06:00
+PHST- 2019/03/29 00:00 [received]
+PHST- 2020/03/05 00:00 [accepted]
+PHST- 2020/03/22 06:00 [entrez]
+PHST- 2020/03/22 06:00 [pubmed]
+PHST- 2020/03/22 06:00 [medline]
+AID - 10.1038/s41598-020-62023-w [pii]
+AID - 62023 [pii]
+AID - 10.1038/s41598-020-62023-w [doi]
+PST - epublish
+SO  - Sci Rep. 2020 Mar 20;10(1):5176. doi: 10.1038/s41598-020-62023-w.

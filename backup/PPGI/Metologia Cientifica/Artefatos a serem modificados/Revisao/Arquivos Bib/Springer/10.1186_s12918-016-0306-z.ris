@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Vural, Suleyman
+AU  - Wang, Xiaosheng
+AU  - Guda, Chittibabu
+PY  - 2016
+DA  - 2016/08/26
+TI  - Classification of breast cancer patients using somatic mutation profiles and machine learning approaches
+JO  - BMC Systems Biology
+SP  - 62
+VL  - 10
+IS  - 3
+AB  - The high degree of heterogeneity observed in breast cancers makes it very difficult to classify the cancer patients into distinct clinical subgroups and consequently limits the ability to devise effective therapeutic strategies. Several classification strategies based on ER/PR/HER2 expression or the expression profiles of a panel of genes have helped, but such methods often produce misleading results due to their dynamic nature. In contrast, somatic DNA mutations are relatively stable and lead to initiation and progression of many sporadic cancers. Hence in this study, we explore the use of gene mutation profiles to classify, characterize and predict the subgroups of breast cancers.
+SN  - 1752-0509
+UR  - https://doi.org/10.1186/s12918-016-0306-z
+DO  - 10.1186/s12918-016-0306-z
+ID  - Vural2016
+ER  - 

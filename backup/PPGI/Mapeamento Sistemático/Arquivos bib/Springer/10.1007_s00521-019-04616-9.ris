@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Karim, Md. Rezaul
+AU  - Rahman, Ashiqur
+AU  - Jares, João Bosco
+AU  - Decker, Stefan
+AU  - Beyan, Oya
+PY  - 2019
+DA  - 2019/11/30
+TI  - A snapshot neural ensemble method for cancer-type prediction based on copy number variations
+JO  - Neural Computing and Applications
+AB  - An accurate diagnosis and prognosis for cancer are specific to patients with particular cancer types and molecular traits, which needs to address carefully. The discovery of important biomarkers is becoming an important step toward understanding the molecular mechanisms of carcinogenesis in which genomics data and clinical outcomes need to be analyzed before making any clinical decision. Copy number variations (CNVs) are found to be associated with the risk of individual cancers and hence can be used to reveal genetic predispositions before cancer develops. In this paper, we collect the CNVs data about 8000 cancer patients covering 14 different cancer types from The Cancer Genome Atlas. Then, two different sparse representations of CNVs based on 578 oncogenes and 20,308 protein-coding genes, including genomic deletions and duplication across the samples, are prepared. Then, we train Conv-LSTM and convolutional autoencoder (CAE) networks using both representations and create snapshot models. While the Conv-LSTM can capture locally and globally important features, CAE can utilize unsupervised pretraining to initialize the weights in the subsequent convolutional layers against the sparsity. Model averaging ensemble (MAE) is then applied to combine the snapshot models in order to make a single prediction. Finally, we identify most significant CNVs biomarkers using guided-gradient class activation map plus (GradCAM++) and rank top genes for different cancer types. Results covering several experiments show fairly high prediction accuracies for the majority of cancer types. In particular, using protein-coding genes, Conv-LSTM and CAE networks can predict cancer types correctly at least 72.96% and 76.77% of the cases, respectively. Contrarily, using oncogenes gives moderately higher accuracies of 74.25% and 78.32%, whereas the snapshot model based on MAE shows overall 2.5% of accuracy improvement.
+SN  - 1433-3058
+UR  - https://doi.org/10.1007/s00521-019-04616-9
+DO  - 10.1007/s00521-019-04616-9
+ID  - Karim2019
+ER  - 

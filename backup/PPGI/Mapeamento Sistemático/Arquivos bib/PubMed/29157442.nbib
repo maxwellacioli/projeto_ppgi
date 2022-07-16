@@ -1,0 +1,88 @@
+PMID- 29157442
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180730
+LR  - 20191210
+IS  - 1872-7565 (Electronic)
+IS  - 0169-2607 (Linking)
+VI  - 153
+DP  - 2018 Jan
+TI  - A deep learning-based multi-model ensemble method for cancer prediction.
+PG  - 1-9
+LID - S0169-2607(17)30494-7 [pii]
+LID - 10.1016/j.cmpb.2017.09.005 [doi]
+AB  - BACKGROUND AND OBJECTIVE: Cancer is a complex worldwide health problem associated 
+      with high mortality. With the rapid development of the high-throughput sequencing 
+      technology and the application of various machine learning methods that have emerged 
+      in recent years, progress in cancer prediction has been increasingly made based on 
+      gene expression, providing insight into effective and accurate treatment decision 
+      making. Thus, developing machine learning methods, which can successfully 
+      distinguish cancer patients from healthy persons, is of great current interest. 
+      However, among the classification methods applied to cancer prediction so far, no 
+      one method outperforms all the others. METHODS: In this paper, we demonstrate a new 
+      strategy, which applies deep learning to an ensemble approach that incorporates 
+      multiple different machine learning models. We supply informative gene data selected 
+      by differential gene expression analysis to five different classification models. 
+      Then, a deep learning method is employed to ensemble the outputs of the five 
+      classifiers. RESULTS: The proposed deep learning-based multi-model ensemble method 
+      was tested on three public RNA-seq data sets of three kinds of cancers, Lung 
+      Adenocarcinoma, Stomach Adenocarcinoma and Breast Invasive Carcinoma. The test 
+      results indicate that it increases the prediction accuracy of cancer for all the 
+      tested RNA-seq data sets as compared to using a single classifier or the majority 
+      voting algorithm. CONCLUSIONS: By taking full advantage of different classifiers, 
+      the proposed deep learning-based multi-model ensemble method is shown to be accurate 
+      and effective for cancer prediction.
+CI  - Copyright © 2017 Elsevier B.V. All rights reserved.
+FAU - Xiao, Yawen
+AU  - Xiao Y
+AD  - Department of Automation, Shanghai Jiao Tong University, and Key Laboratory of 
+      System Control and Information Processing of Ministry of Education, Shanghai 200240, 
+      China. Electronic address: foreverxyw@sjtu.edu.cn.
+FAU - Wu, Jun
+AU  - Wu J
+AD  - School of Biomedical Engineering Shanghai Jiao Tong University, Shanghai 200240, 
+      China. Electronic address: junwu302@gmail.com.
+FAU - Lin, Zongli
+AU  - Lin Z
+AD  - Charles L. Brown Department of Electrical and Computer Engineering, University of 
+      Virginia, P.O. Box 400743, Charlottesville, VA 22904-4743, USA. Electronic address: 
+      zl5y@virginia.edu.
+FAU - Zhao, Xiaodong
+AU  - Zhao X
+AD  - School of Biomedical Engineering Shanghai Jiao Tong University, Shanghai 200240, 
+      China. Electronic address: xiaodong122@yahoo.com.
+LA  - eng
+PT  - Journal Article
+PT  - Validation Study
+DEP - 20170914
+PL  - Ireland
+TA  - Comput Methods Programs Biomed
+JT  - Computer methods and programs in biomedicine
+JID - 8506513
+SB  - IM
+MH  - Gene Expression
+MH  - Humans
+MH  - *Machine Learning
+MH  - *Models, Theoretical
+MH  - Neoplasms/*diagnosis/genetics
+MH  - Neural Networks, Computer
+OTO - NOTNLM
+OT  - Cancer prediction
+OT  - Deep learning
+OT  - Feature selection
+OT  - Gene expression
+OT  - Multi-model ensemble
+EDAT- 2017/11/22 06:00
+MHDA- 2018/07/31 06:00
+CRDT- 2017/11/22 06:00
+PHST- 2017/04/26 00:00 [received]
+PHST- 2017/08/07 00:00 [revised]
+PHST- 2017/09/06 00:00 [accepted]
+PHST- 2017/11/22 06:00 [entrez]
+PHST- 2017/11/22 06:00 [pubmed]
+PHST- 2018/07/31 06:00 [medline]
+AID - S0169-2607(17)30494-7 [pii]
+AID - 10.1016/j.cmpb.2017.09.005 [doi]
+PST - ppublish
+SO  - Comput Methods Programs Biomed. 2018 Jan;153:1-9. doi: 10.1016/j.cmpb.2017.09.005. 
+      Epub 2017 Sep 14.

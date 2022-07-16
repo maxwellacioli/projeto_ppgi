@@ -1,0 +1,73 @@
+PMID- 30065881
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20191120
+IS  - 2167-8359 (Print)
+IS  - 2167-8359 (Electronic)
+IS  - 2167-8359 (Linking)
+VI  - 6
+DP  - 2018
+TI  - Integrative machine learning analysis of multiple gene expression profiles in 
+      cervical cancer.
+PG  - e5285
+LID - 10.7717/peerj.5285 [doi]
+LID - e5285
+AB  - Although most of the cervical cancer cases are reported to be closely related to the 
+      Human Papillomavirus (HPV) infection, there is a need to study genes that stand up 
+      differentially in the final actualization of cervical cancers following HPV 
+      infection. In this study, we proposed an integrative machine learning approach to 
+      analyse multiple gene expression profiles in cervical cancer in order to identify a 
+      set of genetic markers that are associated with and may eventually aid in the 
+      diagnosis or prognosis of cervical cancers. The proposed integrative analysis is 
+      composed of three steps: namely, (i) gene expression analysis of individual dataset; 
+      (ii) meta-analysis of multiple datasets; and (iii) feature selection and machine 
+      learning analysis. As a result, 21 gene expressions were identified through the 
+      integrative machine learning analysis which including seven supervised and one 
+      unsupervised methods. A functional analysis with GSEA (Gene Set Enrichment Analysis) 
+      was performed on the selected 21-gene expression set and showed significant 
+      enrichment in a nine-potential gene expression signature, namely PEG3, SPON1, BTD 
+      and RPLP2 (upregulated genes) and PRDX3, COPB2, LSM3, SLC5A3 and AS1B (downregulated 
+      genes).
+FAU - Tan, Mei Sze
+AU  - Tan MS
+AD  - Bioinformatics Programme, Institute of Biological Sciences, Faculty of Science, 
+      University of Malaya, Kuala Lumpur, Malaysia.
+FAU - Chang, Siow-Wee
+AU  - Chang SW
+AD  - Bioinformatics Programme, Institute of Biological Sciences, Faculty of Science, 
+      University of Malaya, Kuala Lumpur, Malaysia.
+FAU - Cheah, Phaik Leng
+AU  - Cheah PL
+AD  - Department of Pathology, Faculty of Medicine, University of Malaya, Kuala Lumpur, 
+      Malaysia.
+FAU - Yap, Hwa Jen
+AU  - Yap HJ
+AD  - Department of Mechanical Engineering, Faculty of Engineering, University of Malaya, 
+      Kuala Lumpur, Malaysia.
+LA  - eng
+PT  - Journal Article
+DEP - 20180725
+TA  - PeerJ
+JT  - PeerJ
+JID - 101603425
+PMC - PMC6064203
+OTO - NOTNLM
+OT  - Cervical cancer prognosis
+OT  - Feature selection
+OT  - Gene expression profiling
+OT  - Machine learning
+OT  - Meta-analysis
+OT  - Potential gene signature
+COIS- The authors declare there are no competing interests.
+EDAT- 2018/08/02 06:00
+MHDA- 2018/08/02 06:01
+CRDT- 2018/08/02 06:00
+PHST- 2018/03/01 00:00 [received]
+PHST- 2018/07/02 00:00 [accepted]
+PHST- 2018/08/02 06:00 [entrez]
+PHST- 2018/08/02 06:00 [pubmed]
+PHST- 2018/08/02 06:01 [medline]
+AID - 5285 [pii]
+AID - 10.7717/peerj.5285 [doi]
+PST - epublish
+SO  - PeerJ. 2018 Jul 25;6:e5285. doi: 10.7717/peerj.5285. eCollection 2018.

@@ -1,0 +1,74 @@
+MAXWELL - STRING DE BUSCA
+
+1st:
+(("artificial intelligence") OR ("AI")) 
+AND 
+((feature selection) AND ((method) OR (algorithm) OR (technique))) 
+AND ((cancer) AND (prognosis)) 
+NOT (diagnosis)
+
+2nd:
+(("feature selection") AND (("artificial intelligence in medicine") OR ("AI in medicine")))
+AND ((cancer) AND (prognosis))
+AND ((method) OR (algorithm) OR (technique))
+
+3td:
+(("artificial intelligence in medicine") OR ("AI in medicine")) 
+AND (("cancer prognosis") or ("cancer prediction")) 
+AND (("feature selection") OR ("features selection")) 
+AND ((method) OR (algorithm) OR (technique))
+
+4th:
+(("machine learning"))
+AND (("feature selection") OR ("features selection")) 
+AND ((model) OR (method) OR (algorithm) OR (technique))
+AND (cancer)
+AND ((prognosis) OR (prediction))
+
+##5th:
+("machine learning") 
+AND (("cancer prognosis") OR ("cancer prediction")) 
+AND (("feature selection") OR ("features selection")) 
+AND ((method) OR (algorithm) OR (technique))
+
+*** ENGINES ***
+
+PUBMED: ("machine learning") AND (("cancer prognosis") OR ("cancer prediction")) AND (("feature selection") OR ("features selection")) AND ((method) OR (algorithm) OR (technique))
+ACM: ("machine learning")  AND (("cancer prognosis") OR ("cancer prediction"))  AND (("feature selection") OR ("features selection"))  AND ((method) OR (algorithm) OR (technique))
+SCIENCE DIRECT: ("machine learning")  AND (("cancer prognosis") OR ("cancer prediction"))  AND (("feature selection") OR ("features selection"))  AND ((method) OR (algorithm) OR (technique))
+IEEE: (("machine learning")) AND (("feature selection") OR ("features selection")) AND ((model) OR (method) OR (algorithm) OR (technique)) AND (cancer) AND ((prognosis) OR (prediction))
+
+Título da Revisão Sistemática
+
+Métodos de Seleção de Features na Aplicação de Modelos de Machine Learning para o Prognóstico de Cancer: Uma Revisão Sistemática da Literatura
+
+Questões:
+Q1: Quais métodos vem sendo utilizados na seleção de features na aplicação de modelos de machine learning para predição de câncer?
+Q2: Quais algoritmos vem sendo utilizados na seleção de features na aplicação de modelos de machine learning para predição de câncer?
+Q3: Quais técnicas vem sendo utilizados na seleção de features na aplicação de modelos de machine learning para predição de câncer?
+
+Filtro:
+Journals
+5 últimos anos
+Inglês
+
+>>> PUBMED <<<
+a - 10 resultados
+b - Leitura do titulo: 2 resultados excluidos
+total = 8
+
+>>> SCIENCE DIRECT <<<
+a - 7 resultados
+b - Leitura do titulo: 0 resultados excluidos
+total = 7
+
+>>> ACM <<<
+a - 31 resultados
+b - Leitura dos titulos: 1
+	1 - Machine Learning for Survival Analysis: A Survey
+	2 - A comparative survey of machine learning classification algorithms for breast cancer detection
+	3 - Machine Learning Methods for Septic Shock Prediction
+	4 - A review of machine learning prediction methods for anxiety disorders
+	
+>>> IEEE <<<
+a - 17 resultados	

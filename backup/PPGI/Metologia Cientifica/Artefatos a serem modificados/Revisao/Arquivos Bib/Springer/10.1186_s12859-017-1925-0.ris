@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Castillo, Daniel
+AU  - Gálvez, Juan Manuel
+AU  - Herrera, Luis Javier
+AU  - Román, Belén San
+AU  - Rojas, Fernando
+AU  - Rojas, Ignacio
+PY  - 2017
+DA  - 2017/11/21
+TI  - Integration of RNA-Seq data with heterogeneous microarray data for breast cancer profiling
+JO  - BMC Bioinformatics
+SP  - 506
+VL  - 18
+IS  - 1
+AB  - Nowadays, many public repositories containing large microarray gene expression datasets are available. However, the problem lies in the fact that microarray technology are less powerful and accurate than more recent Next Generation Sequencing technologies, such as RNA-Seq. In any case, information from microarrays is truthful and robust, thus it can be exploited through the integration of microarray data with RNA-Seq data. Additionally, information extraction and acquisition of large number of samples in RNA-Seq still entails very high costs in terms of time and computational resources.This paper proposes a new model to find the gene signature of breast cancer cell lines through the integration of heterogeneous data from different breast cancer datasets, obtained from microarray and RNA-Seq technologies. Consequently, data integration is expected to provide a more robust statistical significance to the results obtained. Finally, a classification method is proposed in order to test the robustness of the Differentially Expressed Genes when unseen data is presented for diagnosis.
+SN  - 1471-2105
+UR  - https://doi.org/10.1186/s12859-017-1925-0
+DO  - 10.1186/s12859-017-1925-0
+ID  - Castillo2017
+ER  - 

@@ -1,0 +1,25 @@
+TY  - JOUR
+AU  - Zhang, Yang
+AU  - Chen, Jeon-Hor
+AU  - Lin, Yezhi
+AU  - Chan, Siwa
+AU  - Zhou, Jiejie
+AU  - Chow, Daniel
+AU  - Chang, Peter
+AU  - Kwong, Tiffany
+AU  - Yeh, Dah-Cherng
+AU  - Wang, Xinxin
+AU  - Parajuli, Ritesh
+AU  - Mehta, Rita S.
+AU  - Wang, Meihao
+AU  - Su, Min-Ying
+PY  - 2020
+DA  - 2020/10/01
+TI  - Prediction of breast cancer molecular subtypes on DCE-MRI using convolutional neural network with transfer learning between two centers
+JO  - European Radiology
+AB  - To apply deep learning algorithms using a conventional convolutional neural network (CNN) and a recurrent CNN to differentiate three breast cancer molecular subtypes on MRI.
+SN  - 1432-1084
+UR  - https://doi.org/10.1007/s00330-020-07274-x
+DO  - 10.1007/s00330-020-07274-x
+ID  - Zhang2020
+ER  - 

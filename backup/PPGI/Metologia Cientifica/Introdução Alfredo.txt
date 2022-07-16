@@ -1,0 +1,423 @@
+Broadcasting in communication networks has various challenges. 
+According to \citet{Hedetniemi1988}, it has been studied since the early 1950s with \citet{Bavelas1950}. 
+He studied the effectiveness of different communication patterns in helping small groups solve common tasks. 
+He considered measures as the time required to complete an information transmission task and several problems such as the gossiping problem.
+In the 1970s, the broadcasting problem became more and more popular among researchers. 
+% \red{In the same work relates that the broadcast time problem was introduced in 1977 by Slater, Cockayne, and Hedetniemi.}\todo{Frase estranha. Está falando de q trabalho?}
+The \textsc{Minimum Broadcast Time} (MBT) problem \citep{Farley1979} consists of finding the shortest sequence of messages that allows the data to reach every node in the network. 
+At each time step, every node can transmit the message to at most a single neighbor. 
+The goal is to find a broadcast scheme that minimizes the number of steps needed to execute the broadcast operation.
+
+% https://en.wikipedia.org/wiki/Spanning_tree
+% https://en.wikipedia.org/wiki/Distributed_algorithm#:~:text=Distributed%20algorithms%20are%20a%20sub,of%20the%20algorithm%20are%20doing.
+
+The MBT has many applications in distributed systems, such as the Internet of Things (IoT) and Wireless Sensor Networks (WSNs) \citep{Shang2010}.
+These applications rely mainly on large-scale machine communications. Hence, they need data dissemination techniques that combine high reliability with low communication latency. 
+Beyond these points, with the growth of the computing power, some applications can be solved with centralized algorithms, and its no longer necessary to solve them in a distributed way. That is, the MBT can be executed in a cloud.
+
+Besides distributed systems, the MBT has many other applications, including communication among telephone networks \citep{Ivanova2019}, surveillance and reconnaissance \citep{Dekker2002}, and  Direct Memory Access (DMA) \citep{Lazard1992}. In \citet{Chu2018}, a practical implementation of MBT is presented in the context of the Chinese BeiDou Global Navigation Satellite System. Next, we present applications in Industry 4.0 and Robotics.
+
+For Industry 4.0, which presents as its main characteristic the systematic use of networked cyber-physical systems (CPS) in an industry environment~\citep{Yang_2017}. 
+These CPS allow the integration and digitalization of all the industrial processes that make up the value chain, aiming to improve the production adaptability, flexibility, and efficiency. 
+An important issue to attain Industry 4.0 goals is to efficiently disseminate information thought the CPS communication network. 
+In particular, a broadcast communication strategy is adopted by many industry applications, such as safety services, emergency exit guidance, traffic system, energy system, lighting system, and remote equipment maintenance \citep{Dao2020}. 
+For instance, consider an application with many CPS connected thought a wireless network infrastructure.
+These CPS have the same firmware, different hardware, and assume different roles (gateway or common device). 
+The gateways start the data update process, and any updated device can forward its data to other close devices.
+Data transfer by each CPS is limited to one at time to ensure a safe and reliable update.
+In this context, an efficient procedure is necessary to schedule the update sequences minimizing the total update time.
+
+In the context of swarm robotics, the MBT can be used for solving the Freeze-Tag Problem \citep{Bucantanschi2007, Keshavarz2011}.
+The problem is to devise a schedule to activate all robots in the minimum amount of time. 
+Activation of robots, other than the initial robot, only occurs if an active robot physically moves to the location of an inactive robot.
+
+\section{Minimum Broadcast Time}
+
+The \textsc{Minimum Broadcast Time} is a classical \np-hard problem \citep[problem ND49]{GareyJohnson1979} and can be defined as the following. Let $G = (V,E)$ be an undirected connected graph and $V_0 \subseteq V$ a subset of nodes (message originators) which, initially, contain a given message. 
+Let $V_t$ be the set of vertices that received the message at time $t$ or earlier, with $1 \leq t \leq T$, where $T$ is an upper bound for the broadcast time. 
+From these definitions, the MBT asks to find a sequence $V_0, E_1, V_1, E_2, \dots, E_k, V_k$ that minimizes $k$, such that that $V_{k} = V$. In addition, for each $t \in \{1, \dots, k\}$, the following constraints hold:~\begin{enumerate*}[label=(\roman*)]
+\item each edge in $E_t$ has exactly one endpoint in $V_{t-1}$,
+\item no two edges in $E_t$ share a common endpoint, and
+\item $V_{t} = V_{t-1} \cup \{v : (u,v) \in E_{t}\}$.
+\end{enumerate*}
+
+Figs.~\ref{fig:network_example}-\ref{fig:optimal_solution_mbt} show a simple example of the MBT, where a dashed vertex indicates that the vertex did not receive the message, and an arrow indicates a message sent at time $t$. In this example, $V_{0} = \{g_1\}$ model the set of gateways, whereas $D =\{ d_1, d_2, d_3 \}$ the set of common devices. A simple (feasible) solution for the presented problem is depicted in 
+Fig.~\ref{fig:viable_solution_mbt}, and suggests a three steps broadcast.
+However, Fig.~\ref{fig:optimal_solution_mbt} shows an optimal solution that requires only two steps to broadcast the data throughout the network.
+
+\begin{figure}[!htb]
+    \centering
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (4) at (1.5,1.5) {$d_2$};
+    \node (3) at (1.5,0) {$d_3$};
+    \node (1) at (0,0) {$d_1$};
+    \end{scope}
+    
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \end{scope}
+
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (1) edge (2);
+    \path [-] (2) edge (4);
+    \path [-] (3) edge (4);
+    \end{scope}
+    \end{tikzpicture}
+    \caption{Industry scenario}
+    \label{fig:network_example}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[$t=0$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (4) at (1.5,1.5) {$d_2$};
+    % \node (3) at (1.5,0) {$d_3$};
+    \node (1) at (0,0) {$d_1$};
+    \end{scope}
+    
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \end{scope}
+
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (1) edge (2);
+    \path [-] (2) edge (4);
+    % \path [-] (3) edge (4);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[$t=1$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (4) at (1.5,1.5) {$d_2$};
+    % \node (3) at (1.5,0) {$d_3$};
+    \end{scope}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \node (1) at (0,0) {$d_1$};
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (2) edge (4);
+    % \path [-] (3) edge (4);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [<-] (1) edge (2);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[$t=2$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (3) at (1.5,0) {$d_3$};
+    \end{scope}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \node (1) at (0,0) {$d_1$};
+    \node (4) at (1.5,1.5) {$d_2$};
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (3) edge (4);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [-] (2) edge (1);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [<-] (4) edge (2);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[$t=3$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \end{scope}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \node (1) at (0,0) {$d_1$};
+    \node (4) at (1.5,1.5) {$d_2$};
+    \node (3) at (1.5,0) {$d_3$};
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [-] (2) edge (1);
+    \path [-] (3) edge (4);
+    \path [-] (2) edge (4);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [<-] (3) edge (4);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\caption{Viable broadcast solution}
+\label{fig:viable_solution_mbt}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[$t=0$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (4) at (1.5,1.5) {$d_2$};
+    % \node (3) at (1.5,0) {$d_3$};
+    \node (1) at (0,0) {$d_1$};
+    \end{scope}
+    
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \end{scope}
+
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (1) edge (2);
+    \path [-] (2) edge (4);
+    % \path [-] (3) edge (4);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[$t=1$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (3) at (1.5,0) {$d_3$};
+    \node (1) at (0,0) {$d_1$};
+    \end{scope}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \node (4) at (1.5,1.5) {$d_2$};
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \path [-] (3) edge (4);
+    \path [-] (2) edge (1);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [<-] (4) edge (2);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[$t=2$]{\scalebox{1}{
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \end{scope}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (0,1.5) {$g_1$};
+    \node (1) at (0,0) {$d_1$};
+    \node (4) at (1.5,1.5) {$d_2$};
+    \node (3) at (1.5,0) {$d_3$};
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick, dashed}]
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [-] (3) edge (4);
+    \path [-] (2) edge (4);
+    \end{scope}
+    \begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white,circle},
+              every edge/.style={draw=black,very thick}]
+    \path [->] (2) edge (1);
+    \path [<-] (3) edge (4);
+    \end{scope}
+    \end{tikzpicture}
+}
+}
+\hfill
+\caption{Optimal broadcast solution}
+\label{fig:optimal_solution_mbt}
+\end{figure}
+
+%%% 
+
+Here, we have some terminology that will be used throughout this work.
+Before we delve into the variants problems, we need to introduce some terminology used in the next sections:
+
+\begin{definition}\label{broadcast_scheme}
+Broadcast scheme is denoted as ($B_S$), which is a sequence of vertices and edges that describes a solution, the sequence is in format $V_0$, $E_1$, $V_1$, \dots ,$V_T$.
+\end{definition}
+
+\begin{definition}\label{broadcast_tree}
+Broadcast tree is denoted as ($B_T$), which is a directed spanning tree that describes a solution.
+\end{definition}
+
+\begin{definition}\label{broadcast_time_v0}
+Broadcast time of vertex $v_0$ is denoted as $b(v_0)$ or $b(G,v_0)$, which is optimal solution of broadcast time from vertex $v_0$.
+\end{definition}
+
+\begin{definition}\label{broadcast_time_g}
+Broadcast time of graph $G$ is denoted as $b(G)$, which is $b(G) = \min_{v_0 \in V} b(G,v_0)$.
+\end{definition}
+
+\begin{definition}\label{broadcast_center}
+Broadcast center of graph $G$ is denoted as $BC(G)$, which is $BC(G) = \{v_0 \in V | b(v_0) = b(G)\}$.
+\end{definition}
+
+\begin{definition}\label{broadcast_graph}
+Broadcast graph is a graph $G$ that $\max_{v_0 \in V} b(G,v_0) = \left\lceil\log_2{|V|}\right\rceil$.
+\end{definition}
+
+\begin{definition}\label{min_broadcast_graph}
+Minimum broadcast graph (MBG) is a broadcast graph with least amount of edges.
+\end{definition}
+
+\subsection{MBT variants}
+
+For some applications, the MBT model shown above is simplistic because it does not considers the transmission time between devices, and has no processing costs.
+\citet{Rico2019} presents other similar models, in particular: the Telephone model \citep{Su2010} and Postal model \citep{Bar1994}.
+These two models consider a connection time $\alpha$ and transmission time $\beta$, where $\alpha > 0$ is assumed to be a constant and $\beta \geq 0$ varies from edge to edge (both parameters are integers)..
+Hence, the transmission time between the sender $v$ and receiver $u$ is $\beta_{v,u}$. 
+
+The Telephone model considers that the device needs to be set up only once and them can transmit. That is, if sender $v$ will transmit to $u_1$, $u_2$, $\ldots$ and $u_n$, thus broadcast time is: \[\alpha + \max \left( i - 1 + \beta_{v,u_{i}} \right)\]
+
+On the other hand, the Postal model considers that the device needs to be set up each connection, and then it can transmit. That is, if sender $v$ will transmit to $u_1$, $u_2$, $\ldots$ and $u_n$, thus broadcast time is: \[\max \left( i \cdot \alpha + \beta_{v,u_{i}} \right)\]
+
+
+An example of instance is shown in Fig. \ref{fig:network_weight_example}.
+Figures \ref{fig:telephone_postal_models}.1 and \ref{fig:telephone_postal_models}.2 show the broadcast scheme for the Telephone model and Postal model
+with $\alpha = 2$, $\beta_{v_0,v_1} = 1$, $\beta_{v_0,v_2} = 2$, and $\beta_{v_0,v_3} = 3$.
+For Telephone model, the broadcasting time is $2 + \max \left( 1 - 1 + 3, 2 - 1 + 2, 3 - 1 + 1  \right) = 5$, whereas for Postal model, the broadcasting time is $\max \left( 2 + 3, 4 + 2, 6 + 1 \right) = 7$.
+
+\begin{figure}[!htb]
+    \centering
+    \begin{tikzpicture}
+    \begin{scope}[every node/.style={dashed,circle,thick,draw}]
+    \node (4) at (1.5,0) {$v_2$};
+    \node (3) at (3,0) {$v_3$};
+    \node (1) at (0,0) {$v_1$};
+    \end{scope}
+    
+    \begin{scope}[every node/.style={circle,thick,draw}]
+    \node (2) at (1.5,2.5) {$v_0$};
+    \end{scope}
+
+    \draw (2) -- (1) node [midway, fill=white] {$1$};
+    \draw (2) -- (4) node [midway, fill=white] {$2$};
+    \draw (2) -- (3) node [midway, fill=white] {$3$};
+    
+    \end{tikzpicture}
+    \caption{Network with connection time and transmission time}
+    \label{fig:network_weight_example}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[Telephone model]{\scalebox{1}{
+    \begin{tikzpicture}
+    \draw[black, dotted, very thick, rotate=0] (5.5,0) -- (0,0) node[anchor=east] {$t = 0$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-1) -- (0,-1) node[anchor=east] {$t = 1$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-2) -- (0,-2) node[anchor=east] {$t = 2$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-3) -- (0,-3) node[anchor=east] {$t = 3$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-4) -- (0,-4) node[anchor=east] {$t = 4$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-5) -- (0,-5) node[anchor=east] {$t = 5$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-6) -- (0,-6) node[anchor=east] {$t = 6$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-7) -- (0,-7) node[anchor=east] {$t = 7$ \quad};
+    % \draw[black, dotted, very thick, rotate=0] (5.5,-8) -- (0,-8) node[anchor=east] {$t = 8$ \quad};
+    
+    \filldraw 
+    (0.5,-7.5) node[align=center] {$v_0$}
+    (2,-7.5) node[align=center] {$v_1$}  
+    (3.5,-7.5) node[align=center] {$v_2$}
+    (5,-7.5) node[align=center] {$v_3$};
+    
+    \filldraw (0.45,-2) circle (2pt) node[align=center] {};
+    \filldraw (4.95,-7) circle (2pt) node[align=center] {};
+    \filldraw (0.45,-3) circle (2pt) node[align=center] {};
+    \filldraw (3.45,-5) circle (2pt) node[align=center] {};
+    \filldraw (0.45,-4) circle (2pt) node[align=center] {};
+    \filldraw (1.95,-3) circle (2pt) node[align=center] {};
+    
+    \draw[->, ultra thick] (0.45,-4) -- (4.95,-7);
+    \draw[->, ultra thick] (0.45,-3) -- (3.45,-5);
+    \draw[->, ultra thick] (0.45,-2) -- (1.95,-3);
+        
+    \end{tikzpicture}
+}
+}
+\hfill
+\subfigure[Postal model]{\scalebox{1}{
+    \begin{tikzpicture}
+    \draw[black, dotted, very thick, rotate=0] (5.5,0) -- (0,0) node[anchor=east] {$t = 0$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-1) -- (0,-1) node[anchor=east] {$t = 1$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-2) -- (0,-2) node[anchor=east] {$t = 2$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-3) -- (0,-3) node[anchor=east] {$t = 3$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-4) -- (0,-4) node[anchor=east] {$t = 4$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-5) -- (0,-5) node[anchor=east] {$t = 5$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-6) -- (0,-6) node[anchor=east] {$t = 6$ \quad};
+    \draw[black, dotted, very thick, rotate=0] (5.5,-7) -- (0,-7) node[anchor=east] {$t = 7$ \quad};
+    % \draw[black, dotted, very thick, rotate=0] (5.5,-8) -- (0,-8) node[anchor=east] {$t = 8$ \quad};
+    \filldraw 
+    (0.5,-7.5) node[align=center] {$v_0$}
+    (2,-7.5) node[align=center] {$v_1$}  
+    (3.5,-7.5) node[align=center] {$v_2$}
+    (5,-7.5) node[align=center] {$v_3$};
+    
+    \filldraw (0.45,-2) circle (2pt) node[align=center] {};
+    \filldraw (4.95,-5) circle (2pt) node[align=center] {};
+    \filldraw (0.45,-4) circle (2pt) node[align=center] {};
+    \filldraw (3.45,-6) circle (2pt) node[align=center] {};
+    \filldraw (0.45,-6) circle (2pt) node[align=center] {};
+    \filldraw (1.95,-7) circle (2pt) node[align=center] {};
+    
+    \draw[->, ultra thick] (0.45,-2) -- (4.95,-5);
+    \draw[->, ultra thick] (0.45,-4) -- (3.45,-6);
+    \draw[->, ultra thick] (0.45,-6) -- (1.95,-7);
+        
+    \end{tikzpicture}
+}
+}
+\caption{Telephone and Postal models}
+\label{fig:telephone_postal_models}
+\end{figure}
+
+We remark that the MBT can be viewed as Telephone or Postal model when $\alpha = 1$ and $\beta = 0$ for all edges, respectively. 
+Other special case of Telephone model is the Weighted-Vertex Model \citep{Harutyunyan2008}, where each vertex has a different $\alpha$ value. % to vertex and $\beta = 0$ for all edges.
+In both Telephone or Postal models, only one transmission can be performed at a time.
+Because of this, these models are labeled as $1$-broadcast or $1$-port. 
+In addition, a model in which maximum of $k$-transmission can be performed at a time, it called $k$-broadcast or $k$-port \citep{Konig1994}.
+
+It is worth remarking that Definitions \ref{broadcast_scheme}--\ref{min_broadcast_graph} are related to the case where $|V_0| = 1$ and the classical MBT. 
+However, similar considerations can be applied, \textit{mutatis mutandis}, when $|V_0| > 1$ or for MBT variants.

@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Venkataramana, Lokeswari
+AU  - Jacob, Shomona Gracia
+AU  - Ramadoss, Rajavel
+AU  - Saisuma, Dodda
+AU  - Haritha, Dommaraju
+AU  - Manoja, Kunthipuram
+PY  - 2019
+DA  - 2019/11/01
+TI  - Improving classification accuracy of cancer types using parallel hybrid feature selection on microarray gene expression data
+JO  - Genes & Genomics
+SP  - 1301
+EP  - 1313
+VL  - 41
+IS  - 11
+AB  - Data mining techniques are used to mine unknown knowledge from huge data. Microarray gene expression (MGE) data plays a major role in predicting type of cancer. But as MGE data is huge in volume, applying traditional data mining approaches is time consuming. Hence parallel programming frameworks like Hadoop, Spark and Mahout are necessary to ease the task of computation.
+SN  - 2092-9293
+UR  - https://doi.org/10.1007/s13258-019-00859-x
+DO  - 10.1007/s13258-019-00859-x
+ID  - Venkataramana2019
+ER  - 

@@ -1,0 +1,12 @@
+Anotações Pesquisa 05/11/2020
+
+- Dois algoritmos de seleção de features que podem ser interessantes:
+	-- Information Gain (GI)
+	-- Gain Ratio (GT)
+- Analisar os genes de acordo com a relação entre os demais, não apenas fazer uma análise individual de cada um.
+	-- O Relief-F possivelmente faz uma análise individual, fazendo um rank score para cada gene de acordo com a classe da instância ao qual pertence.
+- Tentar combinar os seletores: Relief-F e Gain Ratio *****
+	-- Artigo que trata de Gain Ratio como seletor de características:
+	http://ictactjournals.in/paper/IJSC_V1_I4_6_201-205.pdf
+- Possível objeto de estudo
+	Gene Selection Algorithm by Combining ReliefF and Gain Ratio 	

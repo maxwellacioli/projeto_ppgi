@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Zhao, Dandan
+AU  - Liu, Hong
+AU  - Zheng, Yuanjie
+AU  - He, Yanlin
+AU  - Lu, Dianjie
+AU  - Lyu, Chen
+PY  - 2019
+DA  - 2019/04/01
+TI  - A reliable method for colorectal cancer prediction based on feature selection and support vector machine
+JO  - Medical & Biological Engineering & Computing
+SP  - 901
+EP  - 912
+VL  - 57
+IS  - 4
+AB  - Colorectal cancer (CRC) is a common cancer responsible for approximately 600,000 deaths per year worldwide. Thus, it is very important to find the related factors and detect the cancer accurately. However, timely and accurate prediction of the disease is challenging. In this study, we build an integrated model based on logistic regression (LR) and support vector machine (SVM) to classify the CRC into cancer and normal samples. From various factors, human location, age, gender, BMI, and cancer tumor type, tumor grade, and DNA, of the cancer, we select the most significant factors (p < 0.05) using logistic regression as main features, and with these features, a grid-search SVM model is designed using different kernel types (Linear, radial basis function (RBF), Sigmoid, and Polynomial). The result of the logistic regression indicates that the Firmicutes (AUC 0.918), Bacteroidetes (AUC 0.856), body mass index (BMI) (AUC 0.777), and age (AUC 0.710) and their combined factors (AUC 0.942) are effective for CRC detection. And the best kernel type is RBF, which achieves an accuracy of 90.1% when k = 5, and 91.2% when k = 10. This study provides a new method for colorectal cancer prediction based on independent risky factors.
+SN  - 1741-0444
+UR  - https://doi.org/10.1007/s11517-018-1930-0
+DO  - 10.1007/s11517-018-1930-0
+ID  - Zhao2019
+ER  - 

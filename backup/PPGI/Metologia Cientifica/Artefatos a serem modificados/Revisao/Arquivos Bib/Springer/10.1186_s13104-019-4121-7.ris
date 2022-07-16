@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Aksac, Alper
+AU  - Demetrick, Douglas J.
+AU  - Ozyer, Tansel
+AU  - Alhajj, Reda
+PY  - 2019
+DA  - 2019/02/12
+TI  - BreCaHAD: a dataset for breast cancer histopathological annotation and diagnosis
+JO  - BMC Research Notes
+SP  - 82
+VL  - 12
+IS  - 1
+AB  - Histopathological tissue analysis by a pathologist determines the diagnosis and prognosis of most tumors, such as breast cancer. To estimate the aggressiveness of cancer, a pathologist evaluates the microscopic appearance of a biopsied tissue sample based on morphological features which have been correlated with patient outcome.
+SN  - 1756-0500
+UR  - https://doi.org/10.1186/s13104-019-4121-7
+DO  - 10.1186/s13104-019-4121-7
+ID  - Aksac2019
+ER  - 

@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Murtaza, Ghulam
+AU  - Shuib, Liyana
+AU  - Mujtaba, Ghulam
+AU  - Raza, Ghulam
+PY  - 2020
+DA  - 2020/06/01
+TI  - Breast Cancer Multi-classification through Deep Neural Network and Hierarchical Classification Approach
+JO  - Multimedia Tools and Applications
+SP  - 15481
+EP  - 15511
+VL  - 79
+IS  - 21
+AB  - Breast cancer (BC) is the third leading cause of deaths in women globally. In general, histopathology images are recommended for early diagnosis and detailed analysis for BC. Thus, state-of-the-art classification models are required for the early prediction of BC using histopathology images. This study aims to develop an accurate and computationally feasible classification model named Biopsy Microscopic Image Cancer Network (BMIC_Net) to classify BC into eight distinct subtypes through deep learning (DL) and hierarchical classification approach. For experiments, the publicly available dataset BreakHis is used and splitted into training and testing set. Furthermore, data augmentation was performed on training set only and 4096 result-oriented features were extracted through DL. In order to improve the classification performance, feature reduction schemes were experimented to elicit the most discriminative feature subset. Finally, six machine-learning algorithms were analyzed to acquire the best results. The experimental results revealed that BMIC_Net outperformed existing baseline models by obtaining the highest accuracy of 95.48% for first-level classifier and 94.62% and 92.45% for second-level classifiers. Thus, this model can be deployed on a normal desktop machine in any healthcare center of less privileged areas in under-developing countries to serve as second opinion for breast cancer classification.
+SN  - 1573-7721
+UR  - https://doi.org/10.1007/s11042-019-7525-4
+DO  - 10.1007/s11042-019-7525-4
+ID  - Murtaza2020
+ER  - 

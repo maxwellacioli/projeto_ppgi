@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Chaurasia, Vikas
+AU  - Pal, Saurabh
+PY  - 2020
+DA  - 2020/08/14
+TI  - Applications of Machine Learning Techniques to Predict Diagnostic Breast Cancer
+JO  - SN Computer Science
+SP  - 270
+VL  - 1
+IS  - 5
+AB  - This article compares six machine learning (ML) algorithms: Classification and Regression Tree (CART), Support Vector Machine (SVM), Naïve Bayes (NB), K-Nearest Neighbors (KNN), Linear Regression (LR) and Multilayer Perceptron (MLP) on the Wisconsin Diagnostic Breast Cancer (WDBC) dataset by estimating their classification test accuracy, standardized data accuracy and runtime analysis. The main objective of this study is to improve the accuracy of prediction using a new statistical method of feature selection. The data set has 32 features, which are reduced using statistical techniques (mode), and the same measurements as above are applied for comparative studies. In the reduced attribute data subset (12 features), we applied 6 integrated models AdaBoost (AB), Gradient Boosting Classifier (GBC), Random Forest (RF), Extra Tree (ET) Bagging and Extra Gradient Boost (XGB), to minimize the probability of misclassification based on any single induced model. We also apply the stacking classifier (Voting Classifier) ​​to basic learners: Logistic Regression (LR), Decision Tree (DT), Support-vector clustering (SVC), K-Nearest Neighbors (KNN), Random Forest (RF) and Naïve Bays (NB) to find out the accuracy obtained by voting classifier (Meta level). To implement the ML algorithm, the data set is divided in the following manner: 80% is used in the training phase and 20% is used in the test phase. To adjust the classifier, manually assigned hyper-parameters are used. At different stages of classification, all ML algorithms perform best, with test accuracy exceeding 90% especially when it is applied to a data subset.
+SN  - 2661-8907
+UR  - https://doi.org/10.1007/s42979-020-00296-8
+DO  - 10.1007/s42979-020-00296-8
+ID  - Chaurasia2020
+ER  - 

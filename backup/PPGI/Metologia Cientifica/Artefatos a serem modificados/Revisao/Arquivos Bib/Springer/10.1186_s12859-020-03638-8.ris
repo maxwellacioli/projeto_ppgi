@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Jiang, Xia
+AU  - Wells, Alan
+AU  - Brufsky, Adam
+AU  - Shetty, Darshan
+AU  - Shajihan, Kahmil
+AU  - Neapolitan, Richard E.
+PY  - 2020
+DA  - 2020/07/10
+TI  - Leveraging Bayesian networks and information theory to learn risk factors for breast cancer metastasis
+JO  - BMC Bioinformatics
+SP  - 298
+VL  - 21
+IS  - 1
+AB  - Even though we have established a few risk factors for metastatic breast cancer (MBC) through epidemiologic studies, these risk factors have not proven to be effective in predicting an individual’s risk of developing metastasis. Therefore, identifying critical risk factors for MBC continues to be a major research imperative, and one which can lead to advances in breast cancer clinical care. The objective of this research is to leverage Bayesian Networks (BN) and information theory to identify key risk factors for breast cancer metastasis from data.
+SN  - 1471-2105
+UR  - https://doi.org/10.1186/s12859-020-03638-8
+DO  - 10.1186/s12859-020-03638-8
+ID  - Jiang2020
+ER  - 

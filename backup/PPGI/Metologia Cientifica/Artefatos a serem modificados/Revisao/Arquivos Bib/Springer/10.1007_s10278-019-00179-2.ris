@@ -1,0 +1,25 @@
+TY  - JOUR
+AU  - Ha, Richard
+AU  - Mutasa, Simukayi
+AU  - Karcich, Jenika
+AU  - Gupta, Nishant
+AU  - Pascual Van Sant, Eduardo
+AU  - Nemer, John
+AU  - Sun, Mary
+AU  - Chang, Peter
+AU  - Liu, Michael Z.
+AU  - Jambawalikar, Sachin
+PY  - 2019
+DA  - 2019/04/01
+TI  - Predicting Breast Cancer Molecular Subtype with MRI Dataset Utilizing Convolutional Neural Network Algorithm
+JO  - Journal of Digital Imaging
+SP  - 276
+EP  - 282
+VL  - 32
+IS  - 2
+AB  - To develop a convolutional neural network (CNN) algorithm that can predict the molecular subtype of a breast cancer based on MRI features. An IRB-approved study was performed in 216 patients with available pre-treatment MRIs and immunohistochemical staining pathology data. First post-contrast MRI images were used for 3D segmentation using 3D slicer. A CNN architecture was designed with 14 layers. Residual connections were used in the earlier layers to allow stabilization of gradients during backpropagation. Inception style layers were utilized deeper in the network to allow learned segregation of more complex feature mappings. Extensive regularization was utilized including dropout, L2, feature map dropout, and transition layers. The class imbalance was addressed by doubling the input of underrepresented classes and utilizing a class sensitive cost function. Parameters were tuned based on a 20% validation group. A class balanced holdout set of 40 patients was utilized as the testing set. Software code was written in Python using the TensorFlow module on a Linux workstation with one NVidia Titan X GPU. Seventy-four luminal A, 106 luminal B, 13 HER2+, and 23 basal breast tumors were evaluated. Testing set accuracy was measured at 70%. The class normalized macro area under receiver operating curve (ROC) was measured at 0.853. Non-normalized micro-aggregated AUC was measured at 0.871, representing improved discriminatory power for the highly represented Luminal A and Luminal B subtypes. Aggregate sensitivity and specificity was measured at 0.603 and 0.958. MRI analysis of breast cancers utilizing a novel CNN can predict the molecular subtype of breast cancers. Larger data sets will likely improve our model.
+SN  - 1618-727X
+UR  - https://doi.org/10.1007/s10278-019-00179-2
+DO  - 10.1007/s10278-019-00179-2
+ID  - Ha2019
+ER  - 

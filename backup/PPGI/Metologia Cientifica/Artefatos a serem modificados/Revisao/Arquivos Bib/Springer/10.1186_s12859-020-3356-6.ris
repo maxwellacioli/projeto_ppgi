@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Cernea, Ana
+AU  - Fernández-Martínez, Juan Luis
+AU  - deAndrés-Galiana, Enrique J.
+AU  - Fernández-Ovies, Francisco Javier
+AU  - Alvarez-Machancoses, Oscar
+AU  - Fernández-Muñiz, Zulima
+AU  - Saligan, Leorey N.
+AU  - Sonis, Stephen T.
+PY  - 2020
+DA  - 2020/03/11
+TI  - Robust pathway sampling in phenotype prediction. Application to triple negative breast cancer
+JO  - BMC Bioinformatics
+SP  - 89
+VL  - 21
+IS  - 2
+AB  - Phenotype prediction problems are usually considered ill-posed, as the amount of samples is very limited with respect to the scrutinized genetic probes. This fact complicates the sampling of the defective genetic pathways due to the high number of possible discriminatory genetic networks involved. In this research, we outline three novel sampling algorithms utilized to identify, classify and characterize the defective pathways in phenotype prediction problems, such as the Fisher’s ratio sampler, the Holdout sampler and the Random sampler, and apply each one to the analysis of genetic pathways involved in tumor behavior and outcomes of triple negative breast cancers (TNBC). Altered biological pathways are identified using the most frequently sampled genes and are compared to those obtained via Bayesian Networks (BNs).
+SN  - 1471-2105
+UR  - https://doi.org/10.1186/s12859-020-3356-6
+DO  - 10.1186/s12859-020-3356-6
+ID  - Cernea2020
+ER  - 

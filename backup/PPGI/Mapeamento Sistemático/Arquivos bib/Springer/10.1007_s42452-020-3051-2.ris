@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Shafi, A. S. M.
+AU  - Molla, M. M. Imran
+AU  - Jui, Julakha Jahan
+AU  - Rahman, Mohammad Motiur
+PY  - 2020
+DA  - 2020/06/18
+TI  - Detection of colon cancer based on microarray dataset using machine learning as a feature selection and classification techniques
+JO  - SN Applied Sciences
+SP  - 1243
+VL  - 2
+IS  - 7
+AB  - Microarray data is an increasingly important tool for providing information on gene expression for analysis and interpretation. Researchers attempt to utilize the smallest possible set of relevant gene expression profiles in most gene expression studies to enhance tumor identification accuracy. This research aims to analyze and predicts colon cancer data employing a machine learning approach and feature selection technique based on a random forest classifier. More particularly, our proposed method can reduce the burden of high dimensional data and allow faster calculations by combining the “Mean Decrease Accuracy” and “Mean Decrease Gini” as feature selection methods into a renowned classifier namely Random Forest, with the aim of increasing the prediction model's accuracy level. In addition, we have also shown a comparative model analysis with selection of features and model without selection of features. The extensive experimental results have demonstrated that the proposed model with feature selection is favorable and effective which triumphs the best performance of accuracy.
+SN  - 2523-3971
+UR  - https://doi.org/10.1007/s42452-020-3051-2
+DO  - 10.1007/s42452-020-3051-2
+ID  - Shafi2020
+ER  - 

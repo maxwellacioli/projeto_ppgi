@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Zheng, Bin
+AU  - Qiu, Yuchen
+AU  - Aghaei, Faranak
+AU  - Mirniaharikandehei, Seyedehnafiseh
+AU  - Heidari, Morteza
+AU  - Danala, Gopichandh
+PY  - 2019
+DA  - 2019/11/19
+TI  - Developing global image feature analysis models to predict cancer risk and prognosis
+JO  - Visual Computing for Industry, Biomedicine, and Art
+SP  - 17
+VL  - 2
+IS  - 1
+AB  - In order to develop precision or personalized medicine, identifying new quantitative imaging markers and building machine learning models to predict cancer risk and prognosis has been attracting broad research interest recently. Most of these research approaches use the similar concepts of the conventional computer-aided detection schemes of medical images, which include steps in detecting and segmenting suspicious regions or tumors, followed by training machine learning models based on the fusion of multiple image features computed from the segmented regions or tumors. However, due to the heterogeneity and boundary fuzziness of the suspicious regions or tumors, segmenting subtle regions is often difficult and unreliable. Additionally, ignoring global and/or background parenchymal tissue characteristics may also be a limitation of the conventional approaches. In our recent studies, we investigated the feasibility of developing new computer-aided schemes implemented with the machine learning models that are trained by global image features to predict cancer risk and prognosis. We trained and tested several models using images obtained from full-field digital mammography, magnetic resonance imaging, and computed tomography of breast, lung, and ovarian cancers. Study results showed that many of these new models yielded higher performance than other approaches used in current clinical practice. Furthermore, the computed global image features also contain complementary information from the features computed from the segmented regions or tumors in predicting cancer prognosis. Therefore, the global image features can be used alone to develop new case-based prediction models or can be added to current tumor-based models to increase their discriminatory power.
+SN  - 2524-4442
+UR  - https://doi.org/10.1186/s42492-019-0026-5
+DO  - 10.1186/s42492-019-0026-5
+ID  - Zheng2019
+ER  - 

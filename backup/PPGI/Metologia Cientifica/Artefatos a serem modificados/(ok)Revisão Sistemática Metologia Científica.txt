@@ -1,0 +1,16 @@
+Revisão Sistemática Metologia Científica
+
+String de Busca:
+
+("machine learning") AND
+("dataset") AND
+("breast cancer") AND
+("prognosis")
+
+Inicial
+
+PubMed: 27
+ACM: 50
+IEEE: 16
+Science Direct: 29
+springer: 516

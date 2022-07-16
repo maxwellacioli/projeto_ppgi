@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Zhao, Yiru
+AU  - Zhou, Yifan
+AU  - Liu, Yuan
+AU  - Hao, Yinyi
+AU  - Li, Menglong
+AU  - Pu, Xuemei
+AU  - Li, Chuan
+AU  - Wen, Zhining
+PY  - 2020
+DA  - 2020/05/19
+TI  - Uncovering the prognostic gene signatures for the improvement of risk stratification in cancers by using deep learning algorithm coupled with wavelet transform
+JO  - BMC Bioinformatics
+SP  - 195
+VL  - 21
+IS  - 1
+AB  - The aim of gene expression-based clinical modelling in tumorigenesis is not only to accurately predict the clinical endpoints, but also to reveal the genome characteristics for downstream analysis for the purpose of understanding the mechanisms of cancers. Most of the conventional machine learning methods involved a gene filtering step, in which tens of thousands of genes were firstly filtered based on the gene expression levels by a statistical method with an arbitrary cutoff. Although gene filtering procedure helps to reduce the feature dimension and avoid overfitting, there is a risk that some pathogenic genes important to the disease will be ignored.
+SN  - 1471-2105
+UR  - https://doi.org/10.1186/s12859-020-03544-z
+DO  - 10.1186/s12859-020-03544-z
+ID  - Zhao2020
+ER  - 

@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Nithya, B.
+AU  - Ilango, V.
+PY  - 2019
+DA  - 2019/05/25
+TI  - Evaluation of machine learning based optimized feature selection approaches and classification methods for cervical cancer prediction
+JO  - SN Applied Sciences
+SP  - 641
+VL  - 1
+IS  - 6
+AB  - Cervical cancer is one type of gynaecological cancers and the majority of these complications of cervical cancer are associated to human papillomavirus infection. There are numerous risk factors associated with cervical cancer. It is important to recognize the significance of test variables of cervical cancer for categorizing the patients based on the results. This work intended to attain deeper understanding by applying machine learning techniques in R to analyze the risk factors of cervical cancer. Various types of feature selection techniques are explored in this work to determine about important attributes for cervical cancer prediction. Significant features are identified over various iterations of model training through several feature selection methods and an optimized feature selection model has been formed. In addition, this work aimed to build few classifier models using C5.0, random forest, rpart, KNN and SVM algorithms. Maximum possibilities were explored for training and performance evaluation of all the models. The performance and prediction exactness of these algorithms are conferred in this paper based on the outcomes attained. Overall, C5.0 and random forest classifiers have performed reasonably well with comprehensive accuracy for identifying women exhibiting clinical sign of cervical cancer.
+SN  - 2523-3971
+UR  - https://doi.org/10.1007/s42452-019-0645-7
+DO  - 10.1007/s42452-019-0645-7
+ID  - Nithya2019
+ER  - 

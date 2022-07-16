@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Ghasemzadeh, Ardalan
+AU  - Sarbazi Azad, Saeed
+AU  - Esmaeili, Elham
+PY  - 2019
+DA  - 2019/07/01
+TI  - Breast cancer detection based on Gabor-wavelet transform and machine learning methods
+JO  - International Journal of Machine Learning and Cybernetics
+SP  - 1603
+EP  - 1612
+VL  - 10
+IS  - 7
+AB  - Among the major causes of female mortality, breast cancer used to pose big challenges to the medical world. Currently, the most popular method of monitoring and diagnoses—in addition to mammography—is carrying out repeated biopsies to locate the tumor further, that may result in loss of breast tissues. This paper presents an effective method of classifying and detecting the masses in mammograms. In the proposed method, we first attain the feature vector pertaining to each mammography image based on Gabor wavelet transform. Then, we performed tenfold cross validation through several experiments, analyzing the data complexity on each fold. We also used some machine learning methods as decision-making stage and achieved mean accuracies above 0.939, mean sensitivities as high as 0.951, and the mean specificities greater than 0.92. Evaluations and comparisons witness the effectiveness of the proposed method for better diagnosis of breast cancer against the known classification techniques developed in mammography. Simplicity, robustness and high accuracy are advantages of the proposed method.
+SN  - 1868-808X
+UR  - https://doi.org/10.1007/s13042-018-0837-2
+DO  - 10.1007/s13042-018-0837-2
+ID  - Ghasemzadeh2019
+ER  - 

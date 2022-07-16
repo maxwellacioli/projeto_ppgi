@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Guillaud, Martial
+AU  - Ye, Qian
+AU  - Leung, Sam
+AU  - Carraro, Anita
+AU  - Harrison, Alan
+AU  - Hayes, Malcolm
+AU  - Nichol, Alan
+AU  - Keyes, Mira
+PY  - 2017
+DA  - 2017/12/06
+TI  - Large-scale DNA organization is a prognostic marker of breast cancer survival
+JO  - Medical Oncology
+SP  - 9
+VL  - 35
+IS  - 1
+AB  - Breast cancer is the leading cause of cancer-related deaths among women worldwide. We investigated whether changes in large-scale DNA organization (LDO) of tumor epithelial nuclei are an indicator of the aggressiveness of the tumor. We tested our algorithm on a set of 172 duplicates TMA cores samples coming from 95 breast cancer patients. Thirty-five patients died of breast cancer, and 60 were still alive 10 years after surgery. Duplicates cores were used to create training and test set. The TMA slides were stained with Feulgen–thionin and imaged using our in-house high-resolution Imaging system. Automated segmentation of cell nuclei followed by manual selection of intact, in-focus nuclei resulted in an average of 50 cell nuclei per sample available for analysis. Using forward stepwise linear discriminant analysis, a combination of six features that combined linearly gave the best discrimination between the two groups of cells: cells collected from ‘deceased’ patients TMA specimens and cells collected from “survivors” patients TMA specimens. Five of these features measure the spatial organization of DNA chromatin. The resulting canonical score is named cell LDO score. A patient LDO score, percentage of cell nuclei with a cell LDO score higher than a predefined cutoff value, was processed for the specimens in the test set, and a cutoff value was defined to classify patients with a low or a high LDO score. Using this binary test, 82.1% of patients were correctly classified are “deceased” or “survivors,” with a specificity of 79% and a sensitivity of 88%. The relative risk of death of an individual with a high LDO score was nine times higher than for a patient with a low LDO score. When testing the combination of LDO score, node status, histological grade, and tumor grade to predict breast cancer survival, LDO was the most significant predictor. LDO classification was also highly associated with survival for only grade 1 and 2 patients as well as for only grade 3 patients. Our result confirms the potential of LDO to measure phenotypic changes associated with more aggressive disease and could be evaluated to identify patients more likely to benefit from adjuvant therapies.
+SN  - 1559-131X
+UR  - https://doi.org/10.1007/s12032-017-1068-1
+DO  - 10.1007/s12032-017-1068-1
+ID  - Guillaud2017
+ER  - 

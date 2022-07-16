@@ -1,0 +1,28 @@
+
+1 - Critérios de Inclusão
+Devem ser considerados apenas trabalhos científicos primários
+publicados em periódicos ou em anais de eventos escritos na língua inglesa. Os artigos
+devem ser relacionados exclusivamente aos tipos de dados utilizados para
+prognóstico de câncer de mama, desconsiderando os artigos que utilizam predição para outras
+doenças ou para fins de diagnóstico clínico desta neoplasia. São considerados apenas artigos
+publicados nos anos de 2015 a 2020 e que já tenham sido publicados eletronicamente
+ou de forma impressa.
+
+2 - Critérios de exclusão
+Eliminam-se os estudos que não atendem aos critérios de
+inclusão, como artigos secundários (surveys, revisões sistemáticas) e terciários
+(revisões de revisões sistemáticas), artigos redigidos em outros idiomas, artigos
+redundantes, duplicados ou indisponíveis. Também são excluídos aqueles artigos que
+investigam tipos de dados em outros contextos. 
+
+3 - Critérios de Qualidade
+Sobre o critério de qualidade, define-se um limite inicial alcançado por um paper, através de um esquema de pontuação 
+que considera a estratégia PICOS nos estudos investigados. Esta estratégia 
+consiste em analisar os trabalhos selecionados para identificar se todos incluem
+referências sobre a população, os pacientes ou o problema, além do método de
+intervenção e comparação, o resultado obtido e o projeto do estudo apresentado. Cada
+Critério PICOS é analisado pelos autores deste trabalho e uma nota de 0 a 1 (i.e. 1 se o
+critério for atendido, 0.5 se for parcialmente atendido e 0 se o critério não for atendido)
+é dada para cada critério de qualidade, elaborando-se um score de pontos obtidos pela
+somatória desses critérios. Os trabalhos que não obtiverem uma pontuação mínima de
+3 pontos será excluído do processo de seleção.

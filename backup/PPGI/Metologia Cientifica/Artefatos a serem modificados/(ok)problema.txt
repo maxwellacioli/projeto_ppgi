@@ -1,0 +1,1 @@
+Como os tipos de dados têm sido aplicados nos modelos de aprendizado de máquina para prognóstico de câncer de mama?

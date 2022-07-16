@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Philips, Santosh
+AU  - Wu, Heng-Yi
+AU  - Li, Lang
+PY  - 2017
+DA  - 2017/10/03
+TI  - Using machine learning algorithms to identify genes essential for cell survival
+JO  - BMC Bioinformatics
+SP  - 397
+VL  - 18
+IS  - 11
+AB  - With the explosion of data comes a proportional opportunity to identify novel knowledge with the potential for application in targeted therapies. In spite of this huge amounts of data, the solutions to treating complex disease is elusive. One reason being that these diseases are driven by a network of genes that need to be targeted in order to understand and treat them effectively. Part of the solution lies in mining and integrating information from various disciplines. Here we propose a machine learning method to mining through publicly available literature on RNA interference with the goal of identifying genes essential for cell survival.
+SN  - 1471-2105
+UR  - https://doi.org/10.1186/s12859-017-1799-1
+DO  - 10.1186/s12859-017-1799-1
+ID  - Philips2017
+ER  - 

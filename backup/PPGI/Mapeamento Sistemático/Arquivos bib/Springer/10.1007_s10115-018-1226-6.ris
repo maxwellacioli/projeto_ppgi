@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Malar, B.
+AU  - Nadarajan, R.
+AU  - Gowri Thangam, J.
+PY  - 2019
+DA  - 2019/06/01
+TI  - A hybrid isotonic separation training algorithm with correlation-based isotonic feature selection for binary classification
+JO  - Knowledge and Information Systems
+SP  - 651
+EP  - 683
+VL  - 59
+IS  - 3
+AB  - Isotonic separation is a classification technique which constructs a model by transforming the training set into a linear programming problem (LPP). It is computationally expensive to solve large-scale LPPs using traditional methods when data set grows. This paper proposes a hybrid binary classification algorithm, meta-heuristic isotonic separation with particle swarm optimization and convergence criterion (MeHeIS–CPSO), in which a particle swarm optimization-based meta-heuristic is embedded in the training phase to find a solution for LPP. The proposed framework formulates the LPP as a directed acyclic graph (DAG) and arranges decision variables using topological sort. It obtains a new threshold value from training set and sets up a convergence criterion using this threshold. It also deploys a new correlation coefficient-based supervised feature selection technique to select isotonic features and improves predictive accuracy of the classifier. Experiments are conducted on publicly available data sets and synthetic data set. Theoretical, empirical, and statistical analyses show that MeHeIS–CPSO is superior to its predecessors in terms of training time and predictive ability on large data sets. It also outperforms state-of-the-art machine learning and isotonic classification techniques in terms of predictive performance on small- and large-scale data sets.
+SN  - 0219-3116
+UR  - https://doi.org/10.1007/s10115-018-1226-6
+DO  - 10.1007/s10115-018-1226-6
+ID  - Malar2019
+ER  - 

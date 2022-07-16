@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Braz Junior, Geraldo
+AU  - da Rocha, Simara V.
+AU  - de Almeida, João D. S.
+AU  - de Paiva, Anselmo C.
+AU  - Silva, Aristófanes C.
+AU  - Gattass, Marcelo
+PY  - 2019
+DA  - 2019/05/01
+TI  - Breast cancer detection in mammography using spatial diversity, geostatistics, and concave geometry
+JO  - Multimedia Tools and Applications
+SP  - 13005
+EP  - 13031
+VL  - 78
+IS  - 10
+AB  - Breast cancer is a global health problem which mainly affects the female population. It is known that early detection increases the chances of effective treatment, improving the disease prognosis. It remains a challenge to detect the lesion with high detection rate and ensure, at the same time, low rates of false positives . Aiming this objective, this work proposes an efficient method for detection of mass regions on digitized mammograms though diversity analysis, geostatistical and concave geometry (Alpha Shapes). We evaluate the detection rate for each feature extraction using Support Vector Machine in MIAS and DDSM database, with 74 and 621 mammograms, respectively, all containing at least one mass region. The obtained results are promising, reaching 97.30% of detection rate and 0.89 false positive per image for MIAS database and also 91.63% of detection rate and 0.86 false positive per image for DDSM database. Specifically, in DDSM obtaining high detection rate and low rate of false positives when using concave geometry to extract features in a large database.
+SN  - 1573-7721
+UR  - https://doi.org/10.1007/s11042-018-6259-z
+DO  - 10.1007/s11042-018-6259-z
+ID  - Braz Junior2019
+ER  - 

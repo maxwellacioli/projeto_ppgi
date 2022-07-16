@@ -1,0 +1,141 @@
+PMID- 30453959
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20190529
+LR  - 20200208
+IS  - 1755-8794 (Electronic)
+IS  - 1755-8794 (Linking)
+VI  - 11
+IP  - Suppl 5
+DP  - 2018 Nov 20
+TI  - Genomic analyses based on pulmonary adenocarcinoma in situ reveal early lung cancer 
+      signature.
+PG  - 106
+LID - 10.1186/s12920-018-0413-3 [doi]
+LID - 106
+AB  - BACKGROUND: Non-small cell lung cancer (NSCLC) represents more than about 80% of the 
+      lung cancer. The early stages of NSCLC can be treated with complete resection with a 
+      good prognosis. However, most cases are detected at late stage of the disease. The 
+      average survival rate of the patients with invasive lung cancer is only about 4%. 
+      Adenocarcinoma in situ (AIS) is an intermediate subtype of lung adenocarcinoma that 
+      exhibits early stage growth patterns but can develop into invasion. METHODS: In this 
+      study, we used RNA-seq data from normal, AIS, and invasive lung cancer tissues to 
+      identify a gene module that represents the distinguishing characteristics of AIS as 
+      AIS-specific genes. Two differential expression analysis algorithms were employed to 
+      identify the AIS-specific genes. Then, the subset of the best performed AIS-specific 
+      genes for the early lung cancer prediction were selected by random forest. Finally, 
+      the performances of the early lung cancer prediction were assessed using random 
+      forest, support vector machine (SVM) and artificial neural networks (ANNs) on four 
+      independent early lung cancer datasets including one tumor-educated blood platelets 
+      (TEPs) dataset. RESULTS: Based on the differential expression analysis, 107 
+      AIS-specific genes that consisted of 93 protein-coding genes and 14 long non-coding 
+      RNAs (lncRNAs) were identified. The significant functions associated with these 
+      genes include angiogenesis and ECM-receptor interaction, which are highly related to 
+      cancer development and contribute to the smoking-free lung cancers. Moreover, 12 of 
+      the AIS-specific lncRNAs are involved in lung cancer progression by potentially 
+      regulating the ECM-receptor interaction pathway. The feature selection by random 
+      forest identified 20 of the AIS-specific genes as early stage lung cancer signatures 
+      using the dataset obtained from The Cancer Genome Atlas (TCGA) lung 
+      adenocarcinoma samples. Of the 20 signatures, two were lncRNAs, BLACAT1 and 
+      CTD-2527I21.15 which have been reported to be associated with bladder cancer, 
+      colorectal cancer and breast cancer. In blind classification for three independent 
+      tissue sample datasets, these signature genes consistently yielded about 98% 
+      accuracy for distinguishing early stage lung cancer from normal cases. However, the 
+      prediction accuracy for the blood platelets samples was only 64.35% (sensitivity 
+      78.1%, specificity 50.59%, and AUROC 0.747). CONCLUSIONS: The comparison of AIS with 
+      normal and invasive tumor revealed diseases-specific genes and offered new insights 
+      into the mechanism underlying AIS progression into an invasive tumor. These genes 
+      can also serve as the signatures for early diagnosis of lung cancer with high 
+      accuracy. The expression profile of gene signatures identified from tissue cancer 
+      samples yielded remarkable early cancer prediction for tissues samples, however, 
+      relatively lower accuracy for boold platelets samples.
+FAU - Li, Dan
+AU  - Li D
+AD  - Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of 
+      Education, College of Computer Science & Technology, Jilin University, Changchun, 
+      130012, China.
+AD  - MidSouth Bioinformatics Center and Joint Bioinformatics Ph.D. Program of University 
+      of Arkansas at Little Rock and Univ. of Arkansas Medical Sciences, 2801 S. Univ. 
+      Ave, Little Rock, AR, 72204, USA.
+FAU - Yang, William
+AU  - Yang W
+AD  - Department of Computer Science, Carnegie Mellon University School of Computer 
+      Science, 5000 Forbes Ave, Pittsburgh, PA, 15213, USA.
+FAU - Zhang, Yifan
+AU  - Zhang Y
+AD  - MidSouth Bioinformatics Center and Joint Bioinformatics Ph.D. Program of University 
+      of Arkansas at Little Rock and Univ. of Arkansas Medical Sciences, 2801 S. Univ. 
+      Ave, Little Rock, AR, 72204, USA.
+FAU - Yang, Jack Y
+AU  - Yang JY
+AD  - MidSouth Bioinformatics Center and Joint Bioinformatics Ph.D. Program of University 
+      of Arkansas at Little Rock and Univ. of Arkansas Medical Sciences, 2801 S. Univ. 
+      Ave, Little Rock, AR, 72204, USA.
+FAU - Guan, Renchu
+AU  - Guan R
+AD  - Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of 
+      Education, College of Computer Science & Technology, Jilin University, Changchun, 
+      130012, China.
+AD  - MidSouth Bioinformatics Center and Joint Bioinformatics Ph.D. Program of University 
+      of Arkansas at Little Rock and Univ. of Arkansas Medical Sciences, 2801 S. Univ. 
+      Ave, Little Rock, AR, 72204, USA.
+FAU - Xu, Dong
+AU  - Xu D
+AD  - Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of 
+      Education, College of Computer Science & Technology, Jilin University, Changchun, 
+      130012, China.
+AD  - Department of Electrical Engineering and Computer Science, Informatics Institute, 
+      and Christopher S. Bond Life Sciences Center, University of Missouri, Columbia, MO, 
+      65211, USA.
+FAU - Yang, Mary Qu
+AU  - Yang MQ
+AD  - MidSouth Bioinformatics Center and Joint Bioinformatics Ph.D. Program of University 
+      of Arkansas at Little Rock and Univ. of Arkansas Medical Sciences, 2801 S. Univ. 
+      Ave, Little Rock, AR, 72204, USA. mqyang@ualr.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, P.H.S.
+DEP - 20181120
+TA  - BMC Med Genomics
+JT  - BMC medical genomics
+JID - 101319628
+RN  - 0 (RNA, Long Noncoding)
+SB  - IM
+MH  - Adenocarcinoma in Situ/genetics/*pathology
+MH  - Area Under Curve
+MH  - Databases, Genetic
+MH  - Disease Progression
+MH  - Gene Expression Regulation, Neoplastic
+MH  - Humans
+MH  - Lung Neoplasms/genetics/*pathology
+MH  - Machine Learning
+MH  - Neoplasm Staging
+MH  - Open Reading Frames/genetics
+MH  - RNA, Long Noncoding/genetics
+MH  - ROC Curve
+MH  - Transcriptome
+PMC - PMC6245590
+OTO - NOTNLM
+OT  - *AIS
+OT  - *Adenocarcinoma in situ
+OT  - *Early diagnosis
+OT  - *Invasive
+OT  - *Lung cancer
+OT  - *lncRNAs
+COIS- COMPETING INTEREST: The authors declare that they have no competing interests. 
+      ETHICS APPROVAL AND CONSENT TO PARTICIPATE: Not applicable. CONSENT FOR PUBLICATION: 
+      Not applicable. PUBLISHER’S NOTE: Springer Nature remains neutral with regard to 
+      jurisdictional claims in published maps and institutional affiliations.
+EDAT- 2018/11/21 06:00
+MHDA- 2019/05/30 06:00
+CRDT- 2018/11/21 06:00
+PHST- 2018/11/21 06:00 [entrez]
+PHST- 2018/11/21 06:00 [pubmed]
+PHST- 2019/05/30 06:00 [medline]
+AID - 10.1186/s12920-018-0413-3 [pii]
+AID - 413 [pii]
+AID - 10.1186/s12920-018-0413-3 [doi]
+PST - epublish
+SO  - BMC Med Genomics. 2018 Nov 20;11(Suppl 5):106. doi: 10.1186/s12920-018-0413-3.

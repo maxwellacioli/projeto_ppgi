@@ -1,0 +1,15 @@
+TY  - JOUR
+AU  - Amjad, Elham
+AU  - Asnaashari, Solmaz
+AU  - Sokouti, Babak
+AU  - Dastmalchi, Siavoush
+PY  - 2020
+DA  - 2020/09/10
+TI  - Impact of Gene Biomarker Discovery Tools Based on Protein–Protein Interaction and Machine Learning on Performance of Artificial Intelligence Models in Predicting Clinical Stages of Breast Cancer
+JO  - Interdisciplinary Sciences: Computational Life Sciences
+AB  - Breast cancer, as one of the most common diseases threatening the women's life, has attracted serious attention of the clinical and biomedical researchers worldwide. The genome-based studies along with their registered GEO datasets are frequent in the literature. Since several methodologies have been developed for analyzing and identifying gene biomarkers, it is necessary to evaluate their robustness. In this study, three well-known biomarker identification methods (i.e., ClusterOne, MCODE, and BioDiscML) were employed in order to identify the potential biomarkers. Then, the methods were ranked and evaluated using nonlinear classification models developed based on the identified sets of biomarkers. A combined BC microarray dataset consisting of GSE124647, GSE124646, and GSE15852 was used as training set, and two test datasets, GSE15852 and GSE25066, were used for the performance measurement of the trained models. The validation of the proposed models was carried out internally (leave-one-out, fivefold and tenfold cross-validation, random sampling, test on training set) and externally (test on test set). The results showed that ClusterOne, MCODE, and BioDiscML tools ranked first, second, and third, respectively, based on the area under the curve (AUC), accuracy, F1 score, precision, and recall metrics. Overall, it can be concluded that the descriptive values of gene biomarkers in terms of their biological aspects that have been determined by a given methodology and the predictive power of the models developed based on the identified gene biomarkers should be considered simultaneously while validating the biomarker identification approaches.
+SN  - 1867-1462
+UR  - https://doi.org/10.1007/s12539-020-00390-8
+DO  - 10.1007/s12539-020-00390-8
+ID  - Amjad2020
+ER  - 

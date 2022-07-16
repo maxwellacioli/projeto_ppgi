@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Aravind Kumar, M.
+AU  - Singh, Vineeta
+AU  - Naushad, Shaik Mohammad
+AU  - Shanker, Uday
+AU  - Lakshmi Narasu, M.
+PY  - 2018
+DA  - 2018/05/01
+TI  - Microarray-based SNP genotyping to identify genetic risk factors of triple-negative breast cancer (TNBC) in South Indian population
+JO  - Molecular and Cellular Biochemistry
+SP  - 1
+EP  - 10
+VL  - 442
+IS  - 1
+AB  - In the view of aggressive nature of Triple-Negative Breast cancer (TNBC) due to the lack of receptors (ER, PR, HER2) and high incidence of drug resistance associated with it, a case–control association study was conducted to identify the contributing genetic risk factors for Triple-negative breast cancer (TNBC). A total of 30 TNBC patients and 50 age and gender-matched controls of Indian origin were screened for 9,00,000 SNP markers using microarray-based SNP genotyping approach. The initial PLINK association analysis (p < 0.01, MAF 0.14–0.44, OR 10–24) identified 28 non-synonymous SNPs and one stop gain mutation in the exonic region as possible determinants of TNBC risk. All the 29 SNPs were annotated using ANNOVAR. The interactions between these markers were evaluated using Multifactor dimensionality reduction (MDR) analysis. The interactions were in the following order: exm408776 > exm1278309 > rs316389 > rs1651654 > rs635538 > exm1292477. Recursive partitioning analysis (RPA) was performed to construct decision tree useful in predicting TNBC risk. As shown in this analysis, rs1651654 and exm585172 SNPs are found to be determinants of TNBC risk. Artificial neural network model was used to generate the Receiver operating characteristic curves (ROC), which showed high sensitivity and specificity (AUC-0.94) of these markers. To conclude, among the 9,00,000 SNPs tested, CCDC42 exm1292477, ANXA3 exm408776, SASH1 exm585172 are found to be the most significant genetic predicting factors for TNBC. The interactions among exm408776, exm1278309, rs316389, rs1651654, rs635538, exm1292477 SNPs inflate the risk for TNBC further. Targeted analysis of these SNPs and genes alone also will have similar clinical utility in predicting TNBC.
+SN  - 1573-4919
+UR  - https://doi.org/10.1007/s11010-017-3187-6
+DO  - 10.1007/s11010-017-3187-6
+ID  - Aravind Kumar2018
+ER  - 

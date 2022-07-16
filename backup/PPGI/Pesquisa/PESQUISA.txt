@@ -1,0 +1,29 @@
+PESQUISA
+
+1 - Paper com dataset de microarray 
+
+> https://www.researchgate.net/publication/276394374_Stable_Gene_Signature_Selection_for_Prediction_of_Breast_Cancer_Recurrence_Using_Joint_Mutual_Information
+> https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE61304
+> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614553/
+
+2 - Paper com um detalhamento interessante sobre a descrição da metodologia
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614553/
+
+3 - Artigo explicando como funciona a utilização de microarray
+
+> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3283953/
+
+4 - Artigo que usa microarray para predizer a recorrência
+
+> https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-100
+
+** DATASET **
+
+https://pubmed.ncbi.nlm.nih.gov/17545524/
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE7390
+https://www.researchgate.net/profile/Sherene-Loi/publication/6290097_Strong_Time_Dependence_of_the_76-Gene_Prognostic_Signature_for_Node-Negative_Breast_Cancer_Patients_in_the_TRANSBIG_Multicenter_Independent_Validation_Series/links/55e571d408aecb1a7ccba274/Strong-Time-Dependence-of-the-76-Gene-Prognostic-Signature-for-Node-Negative-Breast-Cancer-Patients-in-the-TRANSBIG-Multicenter-Independent-Validation-Series.pdf
+
+** DATASET 2 **
+
+https://www.kaggle.com/raghadalharbi/breast-cancer-gene-expression-profiles-metabric

@@ -1,0 +1,13 @@
+TY  - JOUR
+AU  - Khaire, Utkarsh Mahadeo
+AU  - Dhanalakshmi, R.
+PY  - 2020
+DA  - 2020/03/05
+TI  - High-dimensional microarray dataset classification using an improved adam optimizer (iAdam)
+JO  - Journal of Ambient Intelligence and Humanized Computing
+AB  - Classifying data samples into their respective categories is a challenging task, especially when the dataset has more features and only a few samples. A robust model is essential for the accurate classification of data samples. The logistic sigmoid model is one of the simplest model for binary classification. Among the various optimization techniques of the sigmoid function, Adam optimization technique iteratively updates network weights based on training data. Traditional Adam optimizer fails to converge model within certain epochs when the initial values for parameters are situated at the gentle region of the error surface. The continuous movement of the convergence curve in the direction of history can overshoot the goal and oscillate back and forth incessantly before converging to the global minima. The traditional Adam optimizer with a higher learning rate collapses after several epochs for the high-dimensional dataset. The proposed Improved Adam (iAdam) technique is a combination of the look-ahead mechanism and adaptive learning rate for each parameter. It improves the momentum of traditional Adam by evaluating the gradient after applying the current velocity. iAdam also acts as the correction factor to the momentum of Adam. Further, it works efficiently for the high-dimensional dataset and converges considerably to the smallest error within the specified epochs even at higher learning rates. The proposed technique is compared with several traditional methods which demonstrates that iAdam is suitable for the classification of high-dimensional data and it also prevents the model from overfitting by effectively handling bias-variance trade-offs.
+SN  - 1868-5145
+UR  - https://doi.org/10.1007/s12652-020-01832-3
+DO  - 10.1007/s12652-020-01832-3
+ID  - Khaire2020
+ER  - 

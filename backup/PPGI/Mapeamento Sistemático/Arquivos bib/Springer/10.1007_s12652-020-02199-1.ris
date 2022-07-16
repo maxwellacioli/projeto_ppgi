@@ -1,0 +1,15 @@
+TY  - JOUR
+AU  - Maheswari, K.
+AU  - Baranidharan, T.
+AU  - Karthik, S.
+AU  - Sumathi, T.
+PY  - 2020
+DA  - 2020/06/16
+TI  - Modelling of F3I based feature selection approach for PCOS classification and prediction
+JO  - Journal of Ambient Intelligence and Humanized Computing
+AB  - In medical field, PCOS is an endocrine based disorder which affects women with reproductive age. The symptoms associated with PCOS have been mainly encountered for the women with the age range of 25–35 years. The image representation based on the pixel has turns to be more essential for improving the performance of the computer system. Estimating the size, feature selection and classification, object recognition are certain critical crisis where image processing can be implemented. Initially, the noise associated with the image will be eliminated using effectual adaptive histogram equalization, features related to PCOS are considered and features are extracted. After noise removal, features have to be selected from those images before providing the images to classifier. To carry out this process, an approach termed as Furious flies has been proposed here. So as to address the drawbacks of conventional Firefly algorithm, this work proposes an effectual and a novel approach known as furious flies for feature identification which considers three diverse stages known as attraction based ROI selection, selection for follicle identification and follicle identification. Finally, classification can be performed using Naive Bayesian classifier and artificial neural networks. However, using this we can determine the positivity and negativity of the PCOS in earlier stage based on the measurement. Accuracy of the proposed model is 98.63%, precision and specificity is 100%, F-measure is 68.76%, Recall is 55% respectively. The outcomes of this technique are efficient in contrast to prevailing methods. The simulation was carried out using MATLAB environment.
+SN  - 1868-5145
+UR  - https://doi.org/10.1007/s12652-020-02199-1
+DO  - 10.1007/s12652-020-02199-1
+ID  - Maheswari2020
+ER  - 
